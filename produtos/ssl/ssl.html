@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Guilherme Bonato">
+
+
+    <title>Certificados SSL</title>
+
+
+
+
+
+        <!-- bootstrap -->
+
+            <!-- font-awesome/4.7.0 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="../../bootstrap/jquery-3.3.1.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+            
+
+            <!--Normalize V8-->
+            <script src="../../bootstrap/v8.js"></script>
+            
+        <!-- bootstrap -->
+
+
+
+
+    <!--header icon CSS -->
+    <link rel="icon" href="../../logos/favicon.png">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/ssl.css">
+
+
+   
+
+
+
+
+
+</head>
+<body>
+
+           
+ <!--menu-->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="menus">
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+
+            <span  style="color:#fff;" class="navbar-toggle fa fa-navicon" data-toggle="collapse" data-target="#links-menu"></span>
+
+            
+
+            <a class="navbar-brand" href="../../index.html" > <img src="../../logos/logotipo.png" id="logotipo-topo"> </a>
+
+        </div>
+
+        <nav id="links-menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="segundo-menu">
+
+                   
+                        <li><a href="../ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
+                        <li><a href="../epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
+                        <li><a href="../ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
+                        <li><a href="../nfe/nfe.html"><span class="fa fa-barcode"></span>&nbsp; NF-e</a></li>
+                        <li><a href="../cte/cte.html"><span class="fa fa-truck"></span>&nbsp; CT-e</a></li>
+
+
+
+                        <li><a href="../bancario/bancario.html"><span class="fa fa-bank"></span>&nbsp; CIP</a></li>
+                        <li><a href="../oab/oab.html"><span class="fa fa-legal"></span> OAB</a></li>
+                        <li><a href="../emedico/emedico.html"><span class="fa fa-stethoscope"></span>&nbsp; e-Medico</a></li>
+                        <li><a href="ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
+                        <li><a href="../mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+                <li><a href="../bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
+                <li><a href="../ssl/ssl.html"><span class="fa fa-shield"></span> SSL</a></li>
+                <li><a href="../mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
+                <li><a class="scroll" href="../../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
+                <li><a href="../../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
+
+
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre<span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="terceiro-menu">
+                        <li><a href="../../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
+                        <li><a href="../../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="scroll" href="../../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                &nbsp;
+                <li><a href="../../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
+                <li><a href="../../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/CertificadoraSul/"><span style="color:#fff;" class="fa fa-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/certificadorasul/?hl=pt-br"><span style="color:#fff;" class="fa fa-instagram"></span></a></li>
+                <li><a href="https://twitter.com/CompanhiaSul"><span style="color:#fff;" class="fa fa-twitter"></span></a></li>
+            </ul>
+
+
+        </nav>
+
+
+    </div>
+
+
+</nav>
+
+
+
+
+
+
+
+            <div class="space-60"></div>
+
+            <!--banner-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="img/1.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/2.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/3.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--banner-->
+
+
+
+
+
+
+            <div class="space-40"></div>
+
+            <div class="container" id="escolha">
+
+
+
+                <div class="container" align="center" id="topo">
+                    <h2>Escolha seu Certificado <span class="fa fa-check-square-o fa-2x"></span> </h2>
+                    <br>
+                </div>
+
+
+
+
+                <div class="space-30"></div>
+
+
+                <div class="container" align="center">
+
+                    <div class="btn-group">
+
+
+                        <button type="button" class="button" data-toggle="collapse" data-target="#evssl"><span style="color:#fff">EV SSL</span></button>
+                        <button type="button" class="button" data-toggle="collapse" data-target="#fastssl"><span style="color:#fff">Fast SSL</span></button>
+                        <button type="button" class="button" data-toggle="collapse" data-target="#ssl"><span style="color:#fff">SSL</span></button>
+                        <button type="button" class="button" data-toggle="collapse" data-target="#san"><span style="color:#fff">San</span></button>
+                        <button type="button" class="button" data-toggle="collapse" data-target="#code"><span style="color:#fff">CodeSign</span></button>
+
+
+                    </div>
+
+                    <div class="space-30"></div>
+                </div>
+                <div class="space-30"></div>
+            </div>
+
+
+
+
+
+                    <!--EV-ssl-->
+                    <div id="evssl" class="collapse" >
+
+                        <div class="container">
+                            <div class="space-30"></div>
+
+
+
+                                    <!--EV-->
+                                    <div class="container" align="center">
+
+                                        <p>
+                                            O VALID <strong>EV SSL</strong>
+                                            <br>
+                                            <br>
+                                            Oferece o mais alto nível de segurança e garantia dentre os certificados SSL padrões, garantindo ao seu cliente que o seu site é genuíno.
+
+                                            Quando visitantes acessam um website protegido pelo VALID EV SSL, a barra de endereço torna-se verde e o nome da organização é exibida na interface do navegador. Maior segurança significa maior confiança em seu site e nos seus negócios, e maior confiança significa um numero maior de visitantes convertidos em clientes.
+
+
+                                        </p>
+
+                                        <p>
+                                           <h3>  Deixe a barra de endereço do seu site verde, atraia e ganhe mais confiança de seus clientes </h3>
+                                        <br>
+                                        <br>
+
+
+                                            <h4 style="color: green; background: #f2f2f2"  >https://seusite.com.br</h4>
+
+                                        </p>
+                                        <div class="space-40"></div>
+                                    </div>
+                                    <!--EV-->
+
+
+
+                                    <!--Botoes-->
+                                    <div class="container" align="center">
+
+
+                                        <div class="btn-group">
+                                            <button type="button" class="button" data-toggle="collapse" data-target="#ev-cotar"><span style="color:#fff">Cotar ?</span></button>
+                                        </div>
+
+                                        <div class="space-30"></div>
+
+                                    </div>
+                                    <!--Botoes-->
+
+
+
+                            <div class="space-30"></div>
+                        </div>
+
+
+
+                        <div class="space-30"></div>
+
+
+
+                        <!--cotar-->
+                            <div class="container-fluid">
+
+
+
+
+                                <div id="ev-cotar" class="collapse">
+
+
+                                    <div class="container">
+
+                                        <div class="space-40"></div>
+
+
+                                            <form action="../../php/ssl.php" method="post">
+
+
+
+                                                <div class="form-row">
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="email">E-mail</label>
+                                                        <input name="email" type="email" class="form-control" id="email" placeholder="E-mail">
+                                                    </div>
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="telefone">Telefone</label>
+                                                        <input name="telefone" type="number" class="form-control" id="telefone" placeholder="(00) 0000 - 0000">
+                                                    </div>
+
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="nome">Nome</label>
+                                                        <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome">
+                                                    </div>
+
+
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="end">Endereço</label>
+                                                        <input name="end" type="text" class="form-control" id="end" placeholder="Rua / Avenida, nº 0">
+                                                    </div>
+
+                                                </div>
+
+
+
+
+
+                                                <div class="form-row">
+
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputCity">Cidade</label>
+                                                        <input name="cidade" type="text" class="form-control" id="inputCity">
+                                                    </div>
+
+                                                    <div class="form-group col-md-4">
+                                                        <label for="inputEstado">Estado</label>
+                                                        <select name="uf" id="inputEstado" class="form-control">
+                                                            <option selected>Escolher...</option>
+                                                            <option>AC</option>
+                                                            <option>AL</option>
+                                                            <option>AP</option>
+                                                            <option>AM</option>
+                                                            <option>BA</option>
+                                                            <option>CE</option>
+                                                            <option>DF</option>
+                                                            <option>ES</option>
+                                                            <option>GO</option>
+                                                            <option>MA</option>
+                                                            <option>MT</option>
+                                                            <option>MS</option>
+                                                            <option>MG</option>
+                                                            <option>PA</option>
+                                                            <option>PB</option>
+                                                            <option>PR</option>
+                                                            <option>PE</option>
+                                                            <option>PI</option>
+                                                            <option>RJ</option>
+                                                            <option>RN</option>
+                                                            <option>RS</option>
+                                                            <option>RO</option>
+                                                            <option>RR</option>
+                                                            <option>SC</option>
+                                                            <option>SP</option>
+                                                            <option>SE</option>
+                                                            <option>TO</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group col-md-2">
+                                                        <label for="inputCEP">CEP</label>
+                                                        <input name="cep" type="text" class="form-control" id="inputCEP" placeholder="00000-000">
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                                </div>
+                                                <br>
+                                            </form>
+
+
+
+                                        <div class="space-40"></div>
+                                    </div>
+
+
+                                </div> <!--collapse ev-ssl -->
+
+
+
+
+                            </div>
+                        <!--cotar-->
+
+
+
+                        <div class="space-30"></div>
+
+
+                    </div>
+                    <!--Ev-ssl-->
+
+
+                    <!--fast-ssl-->
+                    <div id="fastssl" class="collapse">
+                        <div class="space-40"></div>
+
+                        <div class="container">
+
+                            <p>
+                                O certificado SSL oferece maior segurança ao seu website, criptografando os dados que percorrem pela rede, passando uma maior confiabilidade aos visitantes da sua pagina.
+
+                                Além de toda segurança, todos os sites que possuem certificado digital tem seu ranking melhorado nas buscas através do Google.
+                                <br><br>
+
+                                Os certificados da família VALID SSL DV possuem uma validação e emissão rápida, ideal para quem tem urgência em melhorar a segurança do seu website e precisam economizar tempo.
+                            </p>
+                        </div>
+
+
+                        <div class="space-50"></div>
+
+                        <!-- Vantagens-->
+                        <div class="container-fluid">
+                            <div id="services" class="container-fluid text-center">
+
+                                <h2>Vantagens</h2>
+                                <br>
+
+
+                                <div class="row slideanim">
+
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-hourglass-start fa-3x"></span>
+
+                                        <p> <h4>Mais rapidez na validação e emissão</h4></p>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-money fa-3x"></span>
+                                        <p><h4>Custo benefício</h4></p>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-expeditedssl fa-3x"></span>
+                                        <p><h4>Selo de Segurança dinâmico</h4></p>
+                                    </div>
+                                </div>
+
+                                <br><br>
+                                <div class="row slideanim">
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-globe fa-3x"></span>
+                                        <p><h4>Raiz internacional e reconhecida em todos os browsers</h4></p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-mobile-phone fa-3x"></span>
+                                        <p><h4>Compatibilidade com dispositivos móveis</h4></p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-server fa-3x"></span>
+                                        <p><h4>Inclusão em servidores adicionais sem custo</h4></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Vantagens-->
+
+
+                        <!--Cotar Fast-ssl-->
+
+                        <div class="space-50"></div>
+                        <!--Botoes cotar-->
+                        <div class="container" align="center">
+
+
+                            <div class="btn-group">
+                                <button type="button" class="button" data-toggle="collapse" data-target="#fast-cotar"><span style="color:#fff">Cotar ?</span></button>
+                            </div>
+
+                            <div class="space-30"></div>
+
+                        </div>
+                        <!--Botoes cotar-->
+
+
+                        <!--cotar-->
+                        <div class="container-fluid">
+
+                            <div id="fast-cotar" class="collapse">
+
+
+                                <div class="container">
+
+                                    <div class="space-40"></div>
+
+
+                                    <form action="../../php/ssl.php" method="post">
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="email">E-mail</label>
+                                                <input name="email" type="email" class="form-control" id="email" placeholder="E-mail">
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="telefone">Telefone</label>
+                                                <input name="telefone" type="number" class="form-control" id="telefone" placeholder="(00) 0000 - 0000">
+                                            </div>
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="nome">Nome</label>
+                                                <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome">
+                                            </div>
+
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="end">Endereço</label>
+                                                <input name="end" type="text" class="form-control" id="end" placeholder="Rua / Avenida, nº 0">
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">Cidade</label>
+                                                <input name="cidade" type="text" class="form-control" id="inputCity">
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="inputEstado">Estado</label>
+                                                <select name="uf" id="inputEstado" class="form-control">
+                                                    <option selected>Escolher...</option>
+                                                    <option>AC</option>
+                                                    <option>AL</option>
+                                                    <option>AP</option>
+                                                    <option>AM</option>
+                                                    <option>BA</option>
+                                                    <option>CE</option>
+                                                    <option>DF</option>
+                                                    <option>ES</option>
+                                                    <option>GO</option>
+                                                    <option>MA</option>
+                                                    <option>MT</option>
+                                                    <option>MS</option>
+                                                    <option>MG</option>
+                                                    <option>PA</option>
+                                                    <option>PB</option>
+                                                    <option>PR</option>
+                                                    <option>PE</option>
+                                                    <option>PI</option>
+                                                    <option>RJ</option>
+                                                    <option>RN</option>
+                                                    <option>RS</option>
+                                                    <option>RO</option>
+                                                    <option>RR</option>
+                                                    <option>SC</option>
+                                                    <option>SP</option>
+                                                    <option>SE</option>
+                                                    <option>TO</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-2">
+                                                <label for="inputCEP">CEP</label>
+                                                <input name="cep" type="text" class="form-control" id="inputCEP" placeholder="00000-000">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                        <br>
+                                    </form>
+
+
+
+                                    <div class="space-40"></div>
+                                </div>
+
+
+                            </div> <!--collapse ev-ssl -->
+
+
+
+
+                        </div>
+                        <!--cotar-->
+
+                        <!--Cotar Fast-ssl-->
+
+
+                        <div class="space-30"></div>
+
+                    </div>
+                    <!--fast-ssl-->
+
+
+
+                    <!--ssl-->
+                    <div id="ssl" class="collapse">
+                        <div class="space-40"></div>
+
+                        <div class="container">
+
+                            <p>
+                                <span class="destaque">O certificado SSL</span> oferece maior segurança ao seu website, criptografando os dados que percorrem pela rede, passando uma maior confiabilidade aos visitantes da sua pagina.
+                                <br>
+                                <br>
+
+                                <span class="destaque">Além de toda segurança</span>, todos os sites que possuem certificado digital tem seu ranking melhorado nas buscas através do Google.
+                                <br>
+                                <br>
+
+                                Os certificados da família <span class="destaque">VALID SSL OV possuem uma validação completa</span>, autenticando sua empresa e passando uma confiança maior aos usuários do site.
+                            </p>
+                        </div>
+
+
+                        <div class="space-50"></div>
+
+                        <!-- Vantagens-->
+                        <div class="container-fluid">
+                            <div id="services" class="container-fluid text-center">
+
+                                <h2>Vantagens</h2>
+                                <br>
+
+
+                                <div class="row slideanim">
+
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-hourglass-start fa-3x"></span>
+
+                                        <p> <h4>Mais rapidez na validação e emissão</h4></p>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-money fa-3x"></span>
+                                        <p><h4>Custo benefício</h4></p>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-expeditedssl fa-3x"></span>
+                                        <p><h4>Selo de Segurança dinâmico</h4></p>
+                                    </div>
+                                </div>
+
+                                <br><br>
+                                <div class="row slideanim">
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-globe fa-3x"></span>
+                                        <p><h4>Raiz internacional e reconhecida em todos os browsers</h4></p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-mobile-phone fa-3x"></span>
+                                        <p><h4>Compatibilidade com dispositivos móveis</h4></p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <span class="fa fa-server fa-3x"></span>
+                                        <p><h4>Inclusão em servidores adicionais sem custo</h4></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Vantagens-->
+
+
+                        <!--Cotar ssl-->
+
+                        <div class="space-50"></div>
+
+                        <!--Botoes cotar-->
+                        <div class="container" align="center">
+
+
+                            <div class="btn-group">
+                                <button type="button" class="button" data-toggle="collapse" data-target="#ssl-cotar"><span style="color:#fff">Cotar ?</span></button>
+                            </div>
+
+                            <div class="space-30"></div>
+
+                        </div>
+                        <!--Botoes cotar-->
+
+
+                        <!--cotar-->
+                        <div class="container-fluid">
+
+                            <div id="ssl-cotar" class="collapse">
+
+
+                                <div class="container">
+
+                                    <div class="space-40"></div>
+
+
+                                    <form action="../../php/ssl.php" method="post">
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="email">E-mail</label>
+                                                <input name="email" type="email" class="form-control" id="email" placeholder="E-mail">
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="telefone">Telefone</label>
+                                                <input name="telefone" type="number" class="form-control" id="telefone" placeholder="(00) 0000 - 0000">
+                                            </div>
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="nome">Nome</label>
+                                                <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome">
+                                            </div>
+
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="end">Endereço</label>
+                                                <input name="end" type="text" class="form-control" id="end" placeholder="Rua / Avenida, nº 0">
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">Cidade</label>
+                                                <input name="cidade" type="text" class="form-control" id="inputCity">
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="inputEstado">Estado</label>
+                                                <select name="uf" id="inputEstado" class="form-control">
+                                                    <option selected>Escolher...</option>
+                                                    <option>AC</option>
+                                                    <option>AL</option>
+                                                    <option>AP</option>
+                                                    <option>AM</option>
+                                                    <option>BA</option>
+                                                    <option>CE</option>
+                                                    <option>DF</option>
+                                                    <option>ES</option>
+                                                    <option>GO</option>
+                                                    <option>MA</option>
+                                                    <option>MT</option>
+                                                    <option>MS</option>
+                                                    <option>MG</option>
+                                                    <option>PA</option>
+                                                    <option>PB</option>
+                                                    <option>PR</option>
+                                                    <option>PE</option>
+                                                    <option>PI</option>
+                                                    <option>RJ</option>
+                                                    <option>RN</option>
+                                                    <option>RS</option>
+                                                    <option>RO</option>
+                                                    <option>RR</option>
+                                                    <option>SC</option>
+                                                    <option>SP</option>
+                                                    <option>SE</option>
+                                                    <option>TO</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-2">
+                                                <label for="inputCEP">CEP</label>
+                                                <input name="cep" type="text" class="form-control" id="inputCEP" placeholder="00000-000">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                        <br>
+                                    </form>
+
+
+
+                                    <div class="space-40"></div>
+                                </div>
+
+
+                            </div> <!--collapse ev-ssl -->
+
+
+
+
+                        </div>
+                        <!--cotar-->
+
+                        <!--Cotar ssl-->
+
+
+                        <div class="space-30"></div>
+
+                    </div>
+                    <!--ssl-->
+
+
+
+                    <!--san-ssl-->
+                    <div id="san" class="collapse">
+                        
+                        <div class="container">
+                            <img src="img/san.PNG" id="san-img">
+                        </div>
+
+
+
+                        <!--Cotar san-ssl-->
+
+                        <div class="space-50"></div>
+
+                        <!--Botoes cotar-->
+                        <div class="container" align="center">
+
+
+                            <div class="btn-group">
+                                <button type="button" class="button" data-toggle="collapse" data-target="#san-cotar"><span style="color:#fff">Cotar ?</span></button>
+                            </div>
+
+                            <div class="space-30"></div>
+
+                        </div>
+                        <!--Botoes cotar-->
+
+
+                        <!--cotar-->
+                        <div class="container-fluid">
+
+                            <div id="san-cotar" class="collapse">
+
+
+                                <div class="container">
+
+                                    <div class="space-40"></div>
+
+
+                                    <form action="../../php/ssl.php" method="post">
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="email">E-mail</label>
+                                                <input name="email" type="email" class="form-control" id="email" placeholder="E-mail">
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="telefone">Telefone</label>
+                                                <input name="telefone" type="number" class="form-control" id="telefone" placeholder="(00) 0000 - 0000">
+                                            </div>
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="nome">Nome</label>
+                                                <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome">
+                                            </div>
+
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="end">Endereço</label>
+                                                <input name="end" type="text" class="form-control" id="end" placeholder="Rua / Avenida, nº 0">
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">Cidade</label>
+                                                <input name="cidade" type="text" class="form-control" id="inputCity">
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="inputEstado">Estado</label>
+                                                <select name="uf" id="inputEstado" class="form-control">
+                                                    <option selected>Escolher...</option>
+                                                    <option>AC</option>
+                                                    <option>AL</option>
+                                                    <option>AP</option>
+                                                    <option>AM</option>
+                                                    <option>BA</option>
+                                                    <option>CE</option>
+                                                    <option>DF</option>
+                                                    <option>ES</option>
+                                                    <option>GO</option>
+                                                    <option>MA</option>
+                                                    <option>MT</option>
+                                                    <option>MS</option>
+                                                    <option>MG</option>
+                                                    <option>PA</option>
+                                                    <option>PB</option>
+                                                    <option>PR</option>
+                                                    <option>PE</option>
+                                                    <option>PI</option>
+                                                    <option>RJ</option>
+                                                    <option>RN</option>
+                                                    <option>RS</option>
+                                                    <option>RO</option>
+                                                    <option>RR</option>
+                                                    <option>SC</option>
+                                                    <option>SP</option>
+                                                    <option>SE</option>
+                                                    <option>TO</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-2">
+                                                <label for="inputCEP">CEP</label>
+                                                <input name="cep" type="text" class="form-control" id="inputCEP" placeholder="00000-000">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                        <br>
+                                    </form>
+
+
+
+                                    <div class="space-40"></div>
+                                </div>
+
+
+                            </div> <!--collapse ev-ssl -->
+
+
+
+
+                        </div>
+                        <!--cotar-->
+
+                        <!--Cotar san-ssl-->
+
+
+                    </div>
+                    <!--san-ssl-->
+
+
+
+
+                    <!--CodeSign-->
+                    <div id="code" class="collapse">
+                        <div class="space-40"></div>
+
+                        <div class="container">
+
+                            <p>
+
+                                <strong>VALID CODESIGN</strong> é o produto ideal para empresas que desenvolvem softwares e desejam garantir a legitimidade do mesmo. A assinatura de código fornece proteção contra injeções de malware, fornecendo assim ao cliente a mesma segurança de um software comprado em uma loja.<br>
+
+                                <br><strong>O VALID CODESIGN</strong> utiliza uma criptografia exclusiva para vincular a identidade do fabricante ao software. Os avisos de
+                                <br>segurança com códigos sem assinatura são substituídos com notificações contendo as informações do fabricante do
+                                <br>software, evitando que os usuários abandonem a instalação.<br>
+
+                                <br>
+                                <span class="fa fa-dot-circle-o"></span> Assinatura de aplicações<br>
+                                <span class="fa fa-dot-circle-o"></span> Menor risco de rejeição<br>
+                                <span class="fa fa-dot-circle-o"></span> Autoria na criação de codigos e aplicações<br>
+                                <span class="fa fa-dot-circle-o"></span> Compatível com  (<span class="destaque"> Microsoft</span>  <span class="destaque">Autentecode</span>, <span class="destaque">Java</span>, <span class="destaque">Adobe Air</span>, <span class="destaque">Mac OS</span>, <span class="destaque">Microsoft Office VBA</span>) <br>
+                                <span class="fa fa-dot-circle-o"></span> Garantia de $ 50.000
+
+                            </p>
+                        </div>
+
+
+                        <div class="space-40"></div>
+
+                        <!--Cotar codesign-->
+
+                        <!--Botoes cotar-->
+                        <div class="container" align="center">
+
+
+                            <div class="btn-group">
+                                <button type="button" class="button" data-toggle="collapse" data-target="#code-cotar"><span style="color:#fff">Cotar ?</span></button>
+                            </div>
+
+                            <div class="space-30"></div>
+
+                        </div>
+                        <!--Botoes cotar-->
+
+
+                        <!--cotar-->
+                        <div class="container-fluid">
+
+                            <div id="code-cotar" class="collapse">
+
+
+                                <div class="container">
+
+                                    <div class="space-40"></div>
+
+
+                                    <form action="../../php/ssl.php" method="post">
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="email">E-mail</label>
+                                                <input name="email" type="email" class="form-control" id="email" placeholder="E-mail">
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="telefone">Telefone</label>
+                                                <input name="telefone" type="number" class="form-control" id="telefone" placeholder="(00) 0000 - 0000">
+                                            </div>
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="nome">Nome</label>
+                                                <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome">
+                                            </div>
+
+
+
+                                            <div class="form-group col-md-6">
+                                                <label for="end">Endereço</label>
+                                                <input name="end" type="text" class="form-control" id="end" placeholder="Rua / Avenida, nº 0">
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">Cidade</label>
+                                                <input name="cidade" type="text" class="form-control" id="inputCity">
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="inputEstado">Estado</label>
+                                                <select name="uf" id="inputEstado" class="form-control">
+                                                    <option selected>Escolher...</option>
+                                                    <option>AC</option>
+                                                    <option>AL</option>
+                                                    <option>AP</option>
+                                                    <option>AM</option>
+                                                    <option>BA</option>
+                                                    <option>CE</option>
+                                                    <option>DF</option>
+                                                    <option>ES</option>
+                                                    <option>GO</option>
+                                                    <option>MA</option>
+                                                    <option>MT</option>
+                                                    <option>MS</option>
+                                                    <option>MG</option>
+                                                    <option>PA</option>
+                                                    <option>PB</option>
+                                                    <option>PR</option>
+                                                    <option>PE</option>
+                                                    <option>PI</option>
+                                                    <option>RJ</option>
+                                                    <option>RN</option>
+                                                    <option>RS</option>
+                                                    <option>RO</option>
+                                                    <option>RR</option>
+                                                    <option>SC</option>
+                                                    <option>SP</option>
+                                                    <option>SE</option>
+                                                    <option>TO</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-2">
+                                                <label for="inputCEP">CEP</label>
+                                                <input name="cep" type="text" class="form-control" id="inputCEP" placeholder="00000-000">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                        <br>
+                                    </form>
+
+
+
+                                    <div class="space-40"></div>
+                                </div>
+
+
+                            </div> <!--collapse ev-ssl -->
+
+
+
+
+                        </div>
+                        <!--cotar-->
+
+                        <!--Cotar codesign-->
+
+
+
+
+
+                    </div>
+                    <!--CodeSign-->
+
+
+
+
+
+
+<hr>
+<!-- Links Footer -->
+<div class="jumbotron" id="baixo">
+    <div class="container" align="left">
+
+
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class="col-sm-4" id="txt-footer1">
+                    <h5 style="color: #3b3b3b">Links Úteis</h5>
+
+                    <div class="container" align="left">
+                        <p><a href="https://www.validcertificadora.com.br/Identificacao.aspx/005370">Meus Pedidos</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/cancelamento/005370">Sobre Reembolso</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/cancelamento/005370">Sobre 2ª via NFE</a></p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-4" id="txt-footer2">
+                    <h5 style="color: #3b3b3b"> Veja Também </h5>
+
+                    <div class="container" align="left">
+                        <p><a href="http://www.validcertificadora.com.br/Valid-Certificados-Digitais.htm/005370">Certificados Digitais</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/certificados-ssl/005370">Certificados SSL</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/suporte/005370">Instalação e Suporte</a></p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4" id="txt-footer3">
+
+                    <h5 style="color: #3b3b3b">Clique VALID e pronto!</h5>
+
+                    <div class="container" align="left">
+
+                        <p>
+                            VALID Certificadora Digital Ltda. <br>Uma empresa do Grupo VALID S/A <br>
+                        </p>
+
+                        <p>
+                            R. 15 de Janeiro 373 – 8º Andar<br>Centro Canoas - RS – CEP: 92.010-300
+                        </p>
+
+                        <p><span class="fa fa-phone "></span> <a href="tel:5130314832"> 3031 - 4832</a>
+
+                            &nbsp;
+                            <a href="https://www.facebook.com/CertificadoraSul/" > <span class="fa fa-facebook-official fa-2x"></span></a>
+                            &nbsp;
+                            <a href="https://www.instagram.com/certificadorasul/?hl=pt-br" > <span class="fa fa-instagram fa-2x"></span></a>
+                            &nbsp;
+                            <a href="https://twitter.com/CompanhiaSul" > <span class="fa fa-twitter fa-2x"></span></a></p>
+
+                    </div>
+                    <br><br><br>
+                </div>
+
+
+
+
+                <div class="container-fluid" align="center" id="img-footer">
+
+                    <img src="../../logos/ccs.png" id="ccs">
+                    <img src="../../logos/iti.png" id="iti">
+                    <img src="../../logos/visa.jpg" id="visa">
+                    <img src="../../logos/boleto.jpg" id="boleto">
+                    <img src="../../logos/seg.png" id="seg">
+                </div>
+
+
+            </div><!--row-->
+        </div> <!--container-->
+
+
+    </div> <!--container-->
+</div><!--jumbo-->
+
+
+
+<div class="jumbotron-fluid text-center" id="final">
+    <p>
+        <br>
+        © 2018 Companhia Certificadora Sul - Todos os direitos reservados
+    </p>
+
+
+</div>
+<!-- Links Footer -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,673 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Guilherme Bonato">
+		
+		
+		
+
+		<!-- Site Title -->
+		<title>MAPA CCS</title>
+
+		
+
+ <!-- bootstrap -->
+
+        <!-- font-awesome/4.7.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="../bootstrap/jquery-3.3.1.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+        
+
+       
+        <!--Normalize V8-->
+        <script src="../bootstrap/v8.js"></script>
+        
+    <!-- bootstrap -->
+
+
+	 
+
+		<!--home CSS -->		
+		<link rel="stylesheet" type="text/css" href="css/map.css">
+
+		<!--header icon CSS -->
+		<link rel="icon" href="../logos/favicon.png">
+
+
+
+
+		
+
+		</head>
+
+
+
+		<body>
+
+
+
+	
+<!--menu-->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="menus">
+
+		<div class="container-fluid">
+			 <div class="navbar-header">
+
+
+				  <span  style="color:#fff;" class="navbar-toggle fa fa-navicon" data-toggle="collapse" data-target="#links-menu"></span>
+
+				  
+
+				  <a class="navbar-brand" href="../index.html" > <img src="../logos/logotipo.png" id="logotipo-topo"> </a>
+
+			 </div>
+
+			 <nav id="links-menu" class="collapse navbar-collapse">
+				  <ul class="nav navbar-nav">
+
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
+							 <ul class="dropdown-menu" id="segundo-menu">
+
+							
+								  <li><a href="../produtos/ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
+								  <li><a href="../produtos/epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
+								  <li><a href="../produtos/ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
+								  <li><a href="../produtos/nfe/nfe.html"><span class="fa fa-barcode"></span>&nbsp; NF-e</a></li>
+								  <li><a href="../produtos/cte/cte.html"><span class="fa fa-truck"></span>&nbsp; CT-e</a></li>
+
+
+
+								  <li><a href="../produtos/bancario/bancario.html"><span class="fa fa-bank"></span>&nbsp; CIP</a></li>
+								  <li><a href="../produtos/oab/oab.html"><span class="fa fa-legal"></span> OAB</a></li>
+								  <li><a href="../produtos/emedico/emedico.html"><span class="fa fa-stethoscope"></span>&nbsp; e-Medico</a></li>
+								  <li><a href="../produtos/ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
+								  <li><a href="../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
+
+
+
+							 </ul>
+						</li>
+
+
+
+
+						<li><a href="../produtos/bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
+						<li><a href="../produtos/ssl/ssl.html"><span class="fa fa-shield"></span> SSL</a></li>
+						<li><a href="../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
+						<li><a class="scroll" href="../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
+						<li><a href="../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
+
+
+
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre<span class="caret"></span></a>
+							 <ul class="dropdown-menu" id="terceiro-menu">
+								  <li><a href="../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
+								  <li><a href="mail.html"><span class="fa fa-envelope"></span> Email</a></li>
+							 </ul>
+						</li>
+
+						<li><a class="scroll" href="../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
+
+				  </ul>
+
+				  <ul class="nav navbar-nav navbar-right">
+						&nbsp;
+						<li><a href="../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
+						<li><a href="../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
+				  </ul>
+
+				  <ul class="nav navbar-nav navbar-right">
+						<li><a href="https://www.facebook.com/CertificadoraSul/"><span style="color:#fff;" class="fa fa-facebook"></span></a></li>
+						<li><a href="https://www.instagram.com/certificadorasul/?hl=pt-br"><span style="color:#fff;" class="fa fa-instagram"></span></a></li>
+						<li><a href="https://twitter.com/CompanhiaSul"><span style="color:#fff;" class="fa fa-twitter"></span></a></li>
+				  </ul>
+
+
+			 </nav>
+
+
+		</div>
+
+
+  </nav>
+
+
+
+
+
+
+		<!-- #map -->
+			  <div class="jumbotron-fluid" id="top">
+				  <iframe src="https://www.google.com/maps/d/embed?mid=10TqiOiGYt5d8wMe7S3jQVL7kGFwH_Jw_"width="100%" height="500px"></iframe>
+			  </div>
+			  <!-- #map -->
+
+
+
+
+
+			  <!--busca-->
+			  <div class="container">
+				  <row>
+
+					  <div class="container">
+					  <h2>Busque Por Sua Cidade <span class="fa fa-map-marker"></span> </h2>
+					  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+					  <br>
+					  </div>
+
+
+					  <div class="container">
+
+						  <table class="table table-responsive">
+							  <thead>
+							  <tr>
+								  <th>AR</th>
+								  <th>UF</th>
+								  <th>Cidade</th>
+								  <th>Ponto</th>
+							  </tr>
+							  </thead>
+
+
+							  <tbody id="myTable">
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RJ</td>
+								  <td>Barra da Tijuca</td>
+								  <td>PP CCS R&R AMARAL</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>AR CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Canoas</td>
+								  <td>AR CCS Certificadora</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Porto Alegre</td>
+								  <td>ITS -  CCS Certificadora (Sul Porto Alegre)</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Montenegro</td>
+								  <td>ITS CCS RM Machado</td>
+
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Santa Cruz do Sul</td>
+								  <td>ITS CCS Partner</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Panambi</td>
+								  <td>ITS Certificadora Lider</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Candelaria</td>
+								  <td>ITS Rural Candelaria</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Guaíba</td>
+								  <td>ITS CDL Guaíba</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Uruguaiana</td>
+								  <td>ITS Lena Contabilidade</td>
+
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Viamão</td>
+								  <td>ITS Viamão</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Esteio</td>
+								  <td>ITS Escritorio Musykant</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Passo do Sobrado</td>
+								  <td>ITS CCS Ativa</td>
+							  </tr>
+
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Osório</td>
+								  <td>ITS Sistema Sul</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Barra do Ribeiro</td>
+								  <td>ITS Credito Geral</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Alegrete</td>
+								  <td>ITS Alegrete</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>São Borja</td>
+								  <td>ITS CCS Sindicato do Comercio</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Porto Alegre</td>
+								  <td>ITS Martins Assessoria</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Santiago</td>
+								  <td>ITS CCS Centro Empresarial de Santiago</td>
+							  </tr>
+
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Capão da Canoa</td>
+								  <td>ITS CCS Confiance Sindicos</td>
+							  </tr>
+
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Passo Fundo</td>
+								  <td>CCS - ITS Freitas & Ruas</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>RS</td>
+								  <td>Santana do Livramento</td>
+								  <td>ITS CCS Espaço Contábil</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>SC</td>
+								  <td>Tubarão</td>
+								  <td>ITS Silesio Contabilidade</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>SC</td>
+								  <td>Santo Amaro da Imperatriz</td>
+								  <td>ITS CCS SAI Certificadora</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>SC</td>
+								  <td>Criciuma</td>
+								  <td>ITS ZTI Informática</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>CCS Certificadora</td>
+								  <td>SP</td>
+								  <td>São Paulo </td>
+								  <td>ITS Original</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>E-CERTIFICADORA</td>
+								  <td>SP</td>
+								  <td>Presidente Prudente</td>
+								  <td>AR E-CERTIFICADORA</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>E-CERTIFICADORA</td>
+								  <td>SP</td>
+								  <td>Paraguaçu Paulista </td>
+								  <td>ITS Consutec</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>E-CERTIFICADORA</td>
+								  <td>SP</td>
+								  <td>Rancharia</td>
+								  <td>ITS HGS</td>
+							  </tr>
+
+
+							  <tr>
+								  <td>E-CERTIFICADORA</td>
+								  <td>SP</td>
+								  <td>Ubatuba </td>
+								  <td>ITS Litoral Digital</td>
+							  </tr>
+
+
+
+							  <tr>
+								  <td>E-CERTIFICADORA</td>
+								  <td>SP</td>
+								  <td>Paranapanema</td>
+								  <td>ITS Multi Tech</td>
+							  </tr>
+
+
+
+							  <tr>
+								  <td>E-CERTIFICADORA</td>
+								  <td>SP</td>
+								  <td>Tupã </td>
+								  <td>ITS Syspan</td>
+							  </tr>
+
+
+
+							  <tr>
+								  <td>E-CERTIFICADORA</td>
+								  <td>SP</td>
+								  <td>Presidente Venceslau</td>
+								  <td>ITS Union Tech</td>
+							  </tr>
+
+							  </tbody>
+
+						  </table>
+					  </div>
+
+
+				  </row>
+			  </div>
+
+
+			  <script>
+                  $(document).ready(function(){
+                      $("#myInput").on("keyup", function() {
+                          var value = $(this).val().toLowerCase();
+                          $("#myTable tr").filter(function() {
+                              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                          });
+                      });
+                  });
+			  </script>
+			  <!--busca-->
+
+
+		<div class="space-50"></div>
+
+		<!-- Start contact-page Area -->
+		<div class="container">
+			<div class="row">
+
+				<div class="container" align="center">
+					<h2>Entre Em Contato Agora Mesmo <span class="fa fa-commenting-o"></span> </h2>
+					<br>
+				</div>
+
+				<div class="col-lg-4 d-flex flex-column address-wrap">
+
+					<div class="single-contact-address d-flex flex-row">
+
+						<div class="detail">
+
+							<h4>Canoas, RS</h4>
+							<p><span class="fa fa-map-marker"></span> Rua XV de Janeiro, n.373, Sala 804</p>
+							<br>
+							<h4>Porto Alegre, RS</h4>
+							<p><span class="fa fa-map-marker"></span> AV. Mauá, n.887, Sala 501</p>
+
+						</div>
+					</div>
+
+
+
+
+					<div class="single-contact-address d-flex flex-row">
+
+
+						<div class="contact-details">
+
+							<br>
+							<h4> <span class="fa fa-phone"></span> (51) 3031 - 4832</h4>
+							<h4> <span class="fa fa-phone"></span> (51) 3110  - 7879</h4>
+
+							<br>
+							<p> <span class="fa fa-clock-o"></span> segunda à sexta-feira das 8H as 18H</p>
+							<br>
+
+						</div>
+					</div>
+
+
+
+					<div class="single-contact-address d-flex flex-row">
+						<div class="contact-details">
+							<h4><span class="fa fa-paper-plane-o"></span> sac@certificadorasul.com.br</h4>
+						</div>
+					</div>
+
+
+				</div>
+
+
+				<div class="col-lg-8">
+
+
+
+
+					<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+
+						<div class="row">
+
+							<div class="col-lg-8 form-group">
+
+								<div class="space-50"></div>
+
+								<input name="name" placeholder="Nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digite Seu Nome'" class="common-input mb-20 form-control" required="" type="text">
+								<br>
+								<input name="email" placeholder="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digite Seu email'" class="common-input mb-20 form-control" required="" type="email">
+								<br>
+								<input name="subject" placeholder="Assunto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digite Seu Assunto'" class="common-input mb-20 form-control" required="" type="text">
+							</div>
+
+
+
+							<div class="col-lg-6 form-group">
+								<br><br>
+								<textarea class="common-textarea form-control" name="message" placeholder="Messagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digite Sua Menssagem'" required=""></textarea>
+
+								<div class="col-lg">
+									<br>
+									<button class="btn btn-primary" style="float: right;">Enviar</button>
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+					</form>
+
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<hr>
+		<!-- Links Footer -->
+		<div class="jumbotron" id="baixo">
+			<div class="container" align="left">
+
+
+				<div class="container">
+					<div class="row">
+
+
+
+						<div class="col-sm-4" id="txt-footer1">
+							<h5 style="color: #3b3b3b">Links Úteis</h5>
+
+							<div class="container" align="left">
+								<p><a href="https://www.validcertificadora.com.br/Identificacao.aspx/005370">Meus Pedidos</a></p>
+								<p><a href="http://www.validcertificadora.com.br/cancelamento/005370">Sobre Reembolso</a></p>
+								<p><a href="http://www.validcertificadora.com.br/cancelamento/005370">Sobre 2ª via NFE</a></p>
+							</div>
+
+						</div>
+
+
+						<div class="col-sm-4" id="txt-footer2">
+							<h5 style="color: #3b3b3b"> Veja Também </h5>
+
+							<div class="container" align="left">
+								<p><a href="http://www.validcertificadora.com.br/Valid-Certificados-Digitais.htm/005370">Certificados Digitais</a></p>
+								<p><a href="http://www.validcertificadora.com.br/certificados-ssl/005370">Certificados SSL</a></p>
+								<p><a href="http://www.validcertificadora.com.br/suporte/005370">Instalação e Suporte</a></p>
+							</div>
+
+						</div>
+
+						<div class="col-sm-4" id="txt-footer3">
+
+							<h5 style="color: #3b3b3b">Clique VALID e pronto!</h5>
+
+							<div class="container" align="left">
+
+								<p>
+									VALID Certificadora Digital Ltda. <br>Uma empresa do Grupo VALID S/A <br>
+								</p>
+
+								<p>
+									R. 15 de Janeiro 373 – 8º Andar<br>Centro Canoas - RS – CEP: 92.010-300
+								</p>
+
+								<p><span class="fa fa-phone "></span> <a href="tel:5130314832"> 3031 - 4832</a>
+
+									&nbsp;
+									<a href="https://www.facebook.com/CertificadoraSul/" > <span class="fa fa-facebook-official fa-2x"></span></a>
+									&nbsp;
+									<a href="https://www.instagram.com/certificadorasul/?hl=pt-br" > <span class="fa fa-instagram fa-2x"></span></a>
+									&nbsp;
+									<a href="https://twitter.com/CompanhiaSul" > <span class="fa fa-twitter fa-2x"></span></a></p>
+
+							</div>
+							<br><br><br>
+						</div>
+
+
+
+
+						<div class="container-fluid" align="center" id="img-footer">
+
+							<img src="../logos/ccs.png" id="ccs">
+							<img src="../logos/iti.png" id="iti">
+							<img src="../logos/visa.jpg" id="visa">
+							<img src="../logos/boleto.jpg" id="boleto">
+							<img src="../logos/seg.png" id="seg">
+						</div>
+
+
+					</div><!--row-->
+				</div> <!--container-->
+
+
+			</div> <!--container-->
+		</div><!--jumbo-->
+
+
+
+		<div class="jumbotron-fluid text-center" id="final">
+			<p>
+				<br>
+				© 2018 Companhia Certificadora Sul - Todos os direitos reservados
+			</p>
+
+
+		</div>
+		<!-- Links Footer -->
+
+		</body>
+	</html>

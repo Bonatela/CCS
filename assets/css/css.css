@@ -1,0 +1,453 @@
+
+/*===================MENU=====================*/
+i {
+    color: white;
+}
+/*===================MENU=====================*/
+
+
+span {
+    color: rgb(56, 102, 81);
+}
+
+
+#logotipo-topo {
+    margin-top: -9px;
+}
+
+
+
+#menus {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 15px;
+
+    
+    background-color: #080808;
+}
+
+
+
+#menus a:hover {
+    color: #fff;
+}
+
+
+
+
+#segundo-menu {
+    font-size: 15px;
+    background-color: #080808;
+}
+
+
+
+#segundo-menu a {
+    color: #fff;
+}
+
+
+
+#segundo-menu a:hover {
+    background: #808880;
+    color: #f1f1f1;
+}
+
+
+
+
+#terceiro-menu {
+    font-size: 15px;
+    background-color: #080808;
+}
+
+#terceiro-menu a {
+    color: #fff;
+}
+
+
+#terceiro-menu a:hover {
+    background: #808880;
+    color: #f1f1f1;
+}
+
+
+
+
+
+/*===================Banner=====================*/
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+
+/*===========slider indicator===========*/
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #FFFFFF;
+}
+
+.carousel-control.left, .carousel-control.left {
+    background-image: none;
+    color: #FFFFFF;
+}
+
+.carousel-indicators li {
+    border-color: #FFFFFF;
+}
+
+.carousel-indicators li.active {
+    background-color: #000000;
+}
+/*===========slider indicator===========*/
+/*===================Banner=====================*/
+
+
+
+
+
+/*===================topo=====================*/
+
+#img-topo {
+    height: 100%;
+    width: 100%;
+}
+/*===================topo=====================*/
+
+
+/*===================news=====================*/
+#ar-tp {
+
+}
+/*===================news=====================*/
+
+
+
+
+/*===================Logos=====================*/
+.logo-small {
+    color: #365B56;
+    font-size: 50px;
+}
+.logo {
+    color: #3b3b3b;
+    font-size: 200px;
+}
+/*===================Logos=====================*/
+
+
+
+/*===================SOBRE=====================*/
+/*===================SOBRE=====================*/
+
+
+
+
+
+/*===================PORQUE=====================*/
+#fundo-certificado-escolha {
+
+
+}
+
+/*===================PORQUE=====================*/
+
+
+
+
+
+/*===================PARCEIRO=====================*/
+#parceiro {
+
+
+}
+
+
+
+/*===================PARCEIRO=====================*/
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #365B56;
+}
+
+
+
+
+/*===================COMPRA=====================*/
+.panel {
+    border: 1px solid #365B56;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+
+
+.panel a:link {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+
+.panel-footer .btn:hover {
+    border: 1px solid #365B56;
+    background-color: #3b3b3b !important;
+    color: #f1f1f1;
+}
+
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #365B56 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: white !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #fff;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #365B56;
+    color: #f1f1f1;
+}
+
+
+
+
+
+.panel-footer a {
+    color: #f1f1f1;
+}
+
+.panel-footer a:hover {
+    color: #f1f1f1;
+}
+/*===================COMPRA=====================*/
+
+
+
+
+
+
+/*===================MAP=====================*/
+/*===================MAP=====================*/
+
+
+
+
+/*===================Footer=====================*/
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(56, 102, 81);
+}
+
+/*===================Footer=====================*/
+
+#baixo {
+    background-color: white;
+}
+
+#baixo p {
+    font-size: 15px;
+}
+
+
+#txt-footer1 a:link{
+    text-decoration: none;
+}
+
+#txt-footer1 a:hover {
+    color: #3b3b3b;
+}
+
+
+
+
+#txt-footer2 a:link{
+    text-decoration: none;
+}
+#txt-footer2 a:hover {
+
+    color: #3b3b3b;
+}
+
+
+
+#txt-footer3 a:link{
+    text-decoration: none;
+}
+
+#txt-footer3 a:hover {
+
+    color: #3b3b3b;
+}
+
+/*===================logos footer=====================*/
+#ccs {
+    height: 80px;
+}
+
+#iti {
+    height: 80px;
+}
+
+#visa {
+    height: 50px;
+}
+
+#boleto {
+    height: 50px;
+}
+
+#seg {
+    height: 60px;
+}
+/*===================logos footer=====================*/
+
+
+
+/*===================Final=====================*/
+#final {
+    margin-top: 10px;
+    background-color: #365b56;
+    height: 60px;
+}
+
+#final p {
+    color: whitesmoke;
+}
+/*===================Final=====================*/
+
+
+
+/*==============================================*/
+
+
+
+/*===================Footer=====================*/
+
+
+
+
+
+
+
+/*===================Space=====================*/
+.space-10{
+    height: 10px;
+}
+
+.space-20{
+    height: 20px;
+}
+
+.space-30{
+    height: 30px;
+}
+
+.space-40{
+    height: 40px;
+}
+.space-50{
+    height: 50px;
+}
+
+.space-60{
+    height: 60px;
+}
+
+.space-70{
+    height: 70px;
+}
+
+.space-80{
+    height: 80px;
+}
+
+.space-90{
+    height: 90px;
+}
+
+.space-100{
+    height: 100px;
+}
+/*===================Space=====================*/
+
+
+/*===================TOPO=====================*/
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+}
+/*===================TOPO=====================*/
+
+

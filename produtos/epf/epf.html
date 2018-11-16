@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Guilherme Bonato">
+
+
+    <title>Certificados e-PF</title>
+
+
+
+
+
+
+        <!-- bootstrap -->
+
+            <!-- font-awesome/4.7.0 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="../../bootstrap/jquery-3.3.1.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+            
+
+            <!--Normalize V8-->
+            <script src="../../bootstrap/v8.js"></script>
+            
+        <!-- bootstrap -->
+
+
+
+    <!--header icon CSS -->
+    <link rel="icon" href="../../logos/favicon.png">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/epf.css">
+
+
+    
+
+
+
+
+</head>
+<body>
+
+
+            
+ <!--menu-->
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="menus">
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+
+            <span  style="color:#fff;" class="navbar-toggle fa fa-navicon" data-toggle="collapse" data-target="#links-menu"></span>
+
+            
+
+            <a class="navbar-brand" href="../../index.html" > <img src="../../logos/logotipo.png" id="logotipo-topo"> </a>
+
+        </div>
+
+        <nav id="links-menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="segundo-menu">
+
+                   
+                        <li><a href="../ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
+                        <li><a href="epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
+                        <li><a href="../ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
+                        <li><a href="../nfe/nfe.html"><span class="fa fa-barcode"></span>&nbsp; NF-e</a></li>
+                        <li><a href="../cte/cte.html"><span class="fa fa-truck"></span>&nbsp; CT-e</a></li>
+
+
+
+                        <li><a href="../bancario/bancario.html"><span class="fa fa-bank"></span>&nbsp; CIP</a></li>
+                        <li><a href="../oab/oab.html"><span class="fa fa-legal"></span> OAB</a></li>
+                        <li><a href="../emedico/emedico.html"><span class="fa fa-stethoscope"></span>&nbsp; e-Medico</a></li>
+                        <li><a href="../ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
+                        <li><a href="../mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+                <li><a href="../bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
+                <li><a href="../ssl/ssl.html"><span class="fa fa-shield"></span> SSL</a></li>
+                <li><a href="../mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
+                <li><a class="scroll" href="../../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
+                <li><a href="../../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
+
+
+
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre<span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="terceiro-menu">
+                        <li><a href="../../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
+                        <li><a href="../../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="scroll" href="../../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                &nbsp;
+                <li><a href="../../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
+                <li><a href="../../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/CertificadoraSul/"><span style="color:#fff;" class="fa fa-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/certificadorasul/?hl=pt-br"><span style="color:#fff;" class="fa fa-instagram"></span></a></li>
+                <li><a href="https://twitter.com/CompanhiaSul"><span style="color:#fff;" class="fa fa-twitter"></span></a></li>
+            </ul>
+
+
+        </nav>
+
+
+    </div>
+
+
+</nav>
+
+
+
+            <!--banner-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="images/epf.jpg" alt="Image">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+            <!--banner-->
+
+
+
+            <div class="space-10"></div>
+
+            <!--Sobre-->
+            <div class="container" align="center" id="sobre">
+                <p>Saiba Mais
+                    <a href="#" data-toggle="popover" title="O certificado e-PF é um certificado" data-content="Nem todo empregador é obrigado a ter um CNPJ, porém todos os empregadores com ou sem CNPJ que façam o envio dos arquivos do SEFIP  Sistema Empresa de Recolhimento do FGTS e Informações à Previdência Social de um ou mais funcionários precisarão utilizar do Certificado Digital para acessar o canal do Conectividade Social ICP.
+
+No caso do empregador pessoa física utilizará de um certificado de Pessoa Física constando nos dados do certificado o número de identificação junto ao Cadastro Específico do INSS (CEI). ">Sobre</a>
+                    e-PF <span class="fa fa-id-badge fa-2x"></span>
+                </p>
+            </div>
+            <!--Sobre-->
+
+
+
+
+
+
+
+
+                <div class="container" align="center" id="epf-fundo">
+                   
+
+
+                    <!--E-pf titulo-->
+                    <div class="container" id="epf-corpo">
+                        <div class="space-30"></div>
+                        <div class="container" align="center">
+                            <h2 style="color: whitesmoke"> Escolha Modelo e-PF</h2>
+                            <br>
+                        </div>
+                    <!--E-pf titulo-->
+
+
+                    <!--E-pf Modelo-->
+                    <div class="container" align="center">
+
+                        <div class="btn-group">
+                            <button type="button" class="button" data-toggle="collapse" data-target="#epf-a1"><span style="color:#fff">A1</span></button>
+                            <button type="button" class="button" data-toggle="collapse" data-target="#epf-a3"><span style="color:#fff">A3</span></button>
+                            <button type="button" class="button" data-toggle="collapse" data-target="#epf-a3-cartao"><span style="color:#fff">A3 Cartão</span></button>
+                            <button type="button" class="button" data-toggle="collapse" data-target="#epf-a3-cartao-leitora"><span style="color:#fff">A3 Cartão+Leitora</span></button>
+                            <button type="button" class="button" data-toggle="collapse" data-target="#epf-a3-token"><span style="color:#fff">A3 Token</span></button>
+                        </div>
+                        <div class="space-30"></div>
+                    </div>
+
+                    <!--E-pf Modelo-->
+
+
+
+                    <div class="space-60"></div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!--A1-->
+                <div id="epf-a1" class="collapse">
+
+
+
+                    <!--e-pf a1 Titulo-->
+                    <div class="container" align="center">
+                        <h2 style="color:#365B56;" >e-PF A1 com CEI</h2>
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-pf a1 Titulo-->
+
+                    <!--e-pf a1 Validade-->
+                    <div class="container-fluid">
+
+                        <div class="space-30"></div>
+
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/a1/a1.jpg" class="img-responsive">
+                                        </figure>
+
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 173,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a1-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+
+                                            <p>O e-pf A1 tem validade de 1 ano. <br>
+
+                                                <br><strong>importante:</strong> esse certificado é emitido e armazenado diretamente no computador do titular.
+                                            </p>
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> ∞</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 1 ano</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-pf a1 Validade-->
+
+
+
+                </div>
+                <!--A1-->
+
+
+
+                <!--A3-->
+                <div id="epf-a3" class="collapse">
+
+
+
+                    <!--e-cpf a3 com cei Titulo-->
+                    <div class="container" align="center">
+                        <h2 style="color:#365B56;" >e-PF A3 com CEI </h2>
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-cpf a3 com cei Titulo-->
+
+
+                    <!--e-cpf a3 com cei Validade-->
+                    <div class="container-fluid">
+
+
+                        <div class="container">
+                            <div class="row">
+
+
+                                <div class="space-30"></div>
+
+
+                                <!-- 1 ano -->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/sem.midia/1.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 173,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-1-ano-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+
+                                            <p>O e-pf A3 com cei tem validade de 1 ano.<br>
+                                                <br><strong>importante:</strong> é necessário já possuir cartão ou token aderente a legislação da icp-brasil para armazenamento do certificado digital.
+                                            </p>
+
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 1 ano</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 1 ano -->
+
+                                <!-- 3 anos -->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/sem.midia/3.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 263,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-3-anos-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+
+                                            <p>	O e-pf A3 com cei tem validade de 3 anos.<br>
+
+                                                <br><strong>importante:</strong> é necessário já possuir cartão ou token aderente a legislação da icp-brasil para armazenamento do certificado digital.
+                                            </p>
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 3 anos</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 3 anos -->
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-cpf a3 com cei Validade-->
+
+
+                </div>
+                <!--A3-->
+
+
+
+                <!--A3 Cartão-->
+                <div id="epf-a3-cartao" class="collapse">
+
+                    <!--e-pf a3 cartao com cei Titulo-->
+                    <div class="container" align="center">
+                        <h2 style="color:#365B56;" >e-PF A3 em cartão com CEI</h2>
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-pf a3 cartao com cei Titulo-->
+
+                    <!--e-pf a3 cartao com cei Validade-->
+                    <div class="container-fluid">
+
+                        <div class="container">
+                            <div class="row">
+
+
+                                <div class="space-30"></div>
+
+
+                                <!-- 1 ano cartao com cei--->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/cartao/1.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 223,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-1-ano-em-cartao-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+
+                                            <p>
+                                                esse certificado digital e-pf A3 em cartão com cei tem validade de 1 ano.<br>
+
+                                                <br> <strong>importante:</strong> verifique a compatibilidade dos sistemas operacionais com os dispositivos de armazenamento, na área de especificações localizada abaixo nesta página.
+
+                                            </p>
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 1 ano</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 1 ano cartao com cei-->
+
+
+
+                                <!-- 3 ano cartao com cei--->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/cartao/3.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 313,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-3-anos-em-cartao-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+
+                                            <p>
+                                                esse certificado digital e-pf A3 em cartão com cei tem validade de 3 anos.<br>
+
+                                                <br> <strong>importante:</strong> verifique a compatibilidade dos sistemas operacionais com os dispositivos de armazenamento, na área de especificações localizada abaixo nesta página.
+
+                                            </p>
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 3 anos</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 3 ano cartao com cei--->
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-pf a3 cartao com cei Validade-->
+
+                </div>
+                <!--A3 Cartão-->
+
+
+
+
+                <!--A3 Cartão + leitora-->
+                <div id="epf-a3-cartao-leitora" class="collapse">
+
+
+                    <!--e-pf a3 cartao + leitora -->
+                    <div class="container" align="center">
+                        <h2 style="color:#365B56;" >e-PF A3 em cartão + leitora com CEI </h2>
+                        <div class="space-20"></div>
+                    </div>
+
+
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="space-30"></div>
+
+
+
+                                <!-- 1 ano cartao cartão + leitora com cei-->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/cartao.leitora/1.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 373,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-1-ano-em-cartao-leitora-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+
+                                            <p>
+
+                                                O  e-pf A3 emcartão + leitora tem validade de 1 ano. <br>
+
+                                                <br> acompanha leitora compatível para cartões inteligentes.<br>
+
+                                                <br><strong>importante:</strong> verifique a compatibilidade dos sistemas operacionais com os dispositivos de armazenamento, na área de especificações localizada abaixo nesta página.
+
+                                            </p>
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 1 ano</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 1 ano cartao cartão + leitora com cei--->
+
+
+                                <!-- 3 anos cartao cartão + leitora com cei--->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/cartao.leitora/3.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 463,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-3-anos-em-cartao-leitora-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+                                            <p>O  e-pf A3 emcartão + leitora tem validade de 3 anos. <br>
+
+                                                <br> acompanha leitora compatível para cartões inteligentes.<br>
+
+                                                <br><strong>importante:</strong> verifique a compatibilidade dos sistemas operacionais com os dispositivos de armazenamento, na área de especificações localizada abaixo nesta página.
+                                            </p>
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 3 anos</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 3 anos cartao cartão + leitora com cei--->
+
+
+                            </div>
+                        </div>
+
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-pf a3 cartao + leitora--->
+
+                </div>
+                <!--A3 Cartão + leitora-->
+
+
+
+                <!--A3 Token-->
+                <div id="epf-a3-token" class="collapse">
+
+
+                    <!--e-pf a3 em token com cei-->
+                    <div class="container" align="center">
+                        <h2 style="color:#365B56;" >e-PF A3 em token com CEI </h2>
+                    </div>
+
+                    <div class="container-fluid" >
+
+                        <div class="container">
+                            <div class="row">
+
+
+
+                                <div class="space-30"></div>
+
+
+                                <!-- 1 ano token com cei--->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/token/1.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 373,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-1-ano-em-token-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+
+                                            <p>
+                                                esse certificado digital e-pf A3 em token com cei tem validade de 1 ano.<br>
+
+                                                <br> <strong>importante:</strong> verifique a compatibilidade dos sistemas operacionais com os dispositivos de armazenamento, na área de especificações localizada abaixo nesta página.
+                                            </p>
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 1 ano</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 1 ano token com cei-->
+
+
+                                <!-- 3 anos token--->
+                                <div class="col-md-4 item-block animate-box" data-animate-effect="fadein">
+
+
+                                    <div class="fh5co-property">
+                                        <figure>
+                                            <img src="images/epf/token/3.jpg" alt="" class="img-responsive">
+                                        </figure>
+                                        <div class="fh5co-property-innter">
+
+
+
+                                            <div class="price-status">
+                                                <span class="price">R$ 463,00</span> <a href="http://www.validcertificadora.com.br/e-pf-a3-de-3-anos-em-token-com-cei.htme123b19f-1670-4fd8-8e81-322246214174/" class="button-compra">comprar</a>
+                                            </div>
+
+                                            <p>
+                                                esse certificado digital e-pf A3 em token com cei tem validade de 3 anos.<br>
+
+                                                <br> <strong>importante:</strong> verifique a compatibilidade dos sistemas operacionais com os dispositivos de armazenamento, na área de especificações localizada abaixo nesta página.
+                                            </p>
+
+                                        </div>
+                                        <p class="fh5co-property-specification">
+                                            <span><strong> 1</strong> usuarios </span>  <span><strong>certificado</strong> icp-brasil</span>  <span> <strong> 3 anos</strong></span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <!-- 3 anos token--->
+
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="space-20"></div>
+                    </div>
+                    <!--e-pf a3 em token com cei-->
+
+
+                </div>
+                <!--A3 Token-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+
+
+
+<hr>
+<!-- Links Footer -->
+<div class="jumbotron" id="baixo">
+    <div class="container" align="left">
+
+
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class="col-sm-4" id="txt-footer1">
+                    <h5 style="color: #3b3b3b">Links Úteis</h5>
+
+                    <div class="container" align="left">
+                        <p><a href="https://www.validcertificadora.com.br/Identificacao.aspx/005370">Meus Pedidos</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/cancelamento/005370">Sobre Reembolso</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/cancelamento/005370">Sobre 2ª via NFE</a></p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-4" id="txt-footer2">
+                    <h5 style="color: #3b3b3b"> Veja Também </h5>
+
+                    <div class="container" align="left">
+                        <p><a href="http://www.validcertificadora.com.br/Valid-Certificados-Digitais.htm/005370">Certificados Digitais</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/certificados-ssl/005370">Certificados SSL</a></p>
+                        <p><a href="http://www.validcertificadora.com.br/suporte/005370">Instalação e Suporte</a></p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4" id="txt-footer3">
+
+                    <h5 style="color: #3b3b3b">Clique VALID e pronto!</h5>
+
+                    <div class="container" align="left">
+
+                        <p>
+                            VALID Certificadora Digital Ltda. <br>Uma empresa do Grupo VALID S/A <br>
+                        </p>
+
+                        <p>
+                            R. 15 de Janeiro 373 – 8º Andar<br>Centro Canoas - RS – CEP: 92.010-300
+                        </p>
+
+                        <p><span class="fa fa-phone "></span> <a href="tel:5130314832"> 3031 - 4832</a>
+
+                            &nbsp;
+                            <a href="https://www.facebook.com/CertificadoraSul/" > <span class="fa fa-facebook-official fa-2x"></span></a>
+                            &nbsp;
+                            <a href="https://www.instagram.com/certificadorasul/?hl=pt-br" > <span class="fa fa-instagram fa-2x"></span></a>
+                            &nbsp;
+                            <a href="https://twitter.com/CompanhiaSul" > <span class="fa fa-twitter fa-2x"></span></a></p>
+
+                    </div>
+                    <br><br><br>
+                </div>
+
+
+
+
+                <div class="container-fluid" align="center" id="img-footer">
+
+                    <img src="../../logos/ccs.png" id="ccs">
+                    <img src="../../logos/iti.png" id="iti">
+                    <img src="../../logos/visa.jpg" id="visa">
+                    <img src="../../logos/boleto.jpg" id="boleto">
+                    <img src="../../logos/seg.png" id="seg">
+                </div>
+
+
+            </div><!--row-->
+        </div> <!--container-->
+
+
+    </div> <!--container-->
+</div><!--jumbo-->
+
+
+
+<div class="jumbotron-fluid text-center" id="final">
+    <p>
+        <br>
+        © 2018 Companhia Certificadora Sul - Todos os direitos reservados
+    </p>
+
+
+</div>
+<!-- Links Footer -->
+
+</body>
+</html>
