@@ -1,11 +1,76 @@
-
-
-
 /*===================MENU=====================*/
 i {
     color: white;
 }
 /*===================MENU=====================*/
+
+
+span {
+    color: rgb(56, 102, 81);
+}
+
+
+#logotipo-topo {
+    margin-top: -9px;
+}
+
+
+
+#menus {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 15px;
+
+    
+    background-color: #080808;
+}
+
+
+
+#menus a:hover {
+    color: #fff;
+}
+
+
+
+
+#segundo-menu {
+    font-size: 15px;
+    background-color: #080808;
+}
+
+
+
+#segundo-menu a {
+    color: #fff;
+}
+
+
+
+#segundo-menu a:hover {
+    background: #808880;
+    color: #f1f1f1;
+}
+
+
+
+
+#terceiro-menu {
+    font-size: 15px;
+    background-color: #080808;
+}
+
+#terceiro-menu a {
+    color: #fff;
+}
+
+
+#terceiro-menu a:hover {
+    background: #808880;
+    color: #f1f1f1;
+}
+
+
 
 
 

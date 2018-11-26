@@ -58,36 +58,48 @@
 
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Guilherme Bonato">
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Guilherme Bonato">
 
 
-    <title>Certificadora Sul</title>
+        <title>Certificadora Sul</title>
+
+       
+
+        <!-- bootstrap -->
+
+            <!-- font-awesome/4.7.0 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!--header icon CSS -->
-    <link rel="icon" href="../logos/favicon.png">
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
 
-    <!--CSS -->
-    <link rel="stylesheet" href="return/css/css.css">
+            <!-- jQuery library -->
+            <script src="../bootstrap/jquery-3.3.1.js"></script>
 
-    <!--bootstrap WEB -->
+            <!-- Latest compiled JavaScript -->
+            <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+            
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--bootstrap WEB -->
+            <!--Normalize V8-->
+            <script src="../bootstrap/v8.js"></script>
+            
+        <!-- bootstrap -->
 
 
+        <!--header icon CSS -->
+        <link rel="icon" href="../logos/favicon.png">
+
+
+        <!--CSS -->
+        <link rel="stylesheet" href="return/css/css.css">
+
+
+   
+
+   
 
 
 
@@ -95,61 +107,90 @@
 <body>
 
 
-<!--menu-->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+    <!--menu-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="menus">
 
-    <div class="container-fluid">
-        <div class="navbar-header">
+        <div class="container-fluid">
+            <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#links-menu">
-                <i class="material-icons">Menu</i>
-            </button>
 
-            <a class="navbar-brand" href="../index.html">CCS</a>
+                <span  style="color:#fff;" class="navbar-toggle fa fa-navicon" data-toggle="collapse" data-target="#links-menu"></span>
+
+                
+
+                <a class="navbar-brand" href="#" > <img src="../logos/logotipo.png" id="logotipo-topo"> </a>
+
+            </div>
+
+            <nav id="links-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="segundo-menu">
+
+                       
+                            <li><a href="../produtos/ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
+                            <li><a href="../produtos/epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
+                            <li><a href="../produtos/ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
+                            <li><a href="../produtos/nfe/nfe.html"><span class="fa fa-barcode"></span>&nbsp; NF-e</a></li>
+                            <li><a href="../produtos/cte/cte.html"><span class="fa fa-truck"></span>&nbsp; CT-e</a></li>
+
+
+
+                            <li><a href="../produtos/bancario/bancario.html"><span class="fa fa-bank"></span>&nbsp; CIP</a></li>
+                            <li><a href="../produtos/oab/oab.html"><span class="fa fa-legal"></span> OAB</a></li>
+                            <li><a href="../produtos/emedico/emedico.html"><span class="fa fa-stethoscope"></span>&nbsp; e-Medico</a></li>
+                            <li><a href="../produtos/ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
+                            <li><a href="../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
+                            <li><a href="../produtos/conectividade/conectividade.html"><span class="fa fa-handshake-o"></span>&nbsp; Conectividade</a></li>
+
+
+
+                        </ul>
+                    </li>
+
+
+
+
+                    <li><a href="../produtos/bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
+                    <li><a href="../produtos/ssl/ssl.html"><span class="fa fa-shield"></span> SSL</a></li>
+                    <li><a href="../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
+                    <li><a class="scroll" href="../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
+                    <li><a href="../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
+
+
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre<span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="terceiro-menu">
+                            <li><a href="../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
+                            <li><a href="../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="scroll" href="../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    &nbsp;
+                    <li><a href="../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
+                    <li><a href="../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.facebook.com/CertificadoraSul/"><span style="color:#fff;" class="fa fa-facebook"></span></a></li>
+                    <li><a href="https://www.instagram.com/certificadorasul/?hl=pt-br"><span style="color:#fff;" class="fa fa-instagram"></span></a></li>
+                    <li><a href="https://twitter.com/CompanhiaSul"><span style="color:#fff;" class="fa fa-twitter"></span></a></li>
+                </ul>
+
+
+            </nav>
+
 
         </div>
 
-        <nav id="links-menu" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
 
-                <li><a href="../produtos/todos/todos.html"><span class="fa fa-server"></span> Certificados</a></li>
-                <li><a href="../produtos/bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
-                <li><a href="../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
-                <li><a class="scroll" href="../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
-                <li><a href="../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
-
-
-
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a class="scroll" href="../faq/faq.html">FAQ</a></li>
-                        <li><a class="scroll" href="../map/mail.html">Email</a></li>
-                    </ul>
-                </li>
-
-                <li><a class="scroll" href="../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
-
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="fa fa-user-o"></span> Cadastrar</a></li>
-                <li><a href="#"><span class="fa fa-users"></span> Logar</a></li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://www.facebook.com/CertificadoraSul/"><span class="fa fa-facebook"></span></a></li>
-                <li><a href="https://www.instagram.com/certificadorasul/?hl=pt-br"><span class="fa fa-instagram"></span></a></li>
-                <li><a href="https://twitter.com/CompanhiaSul"><span class="fa fa-twitter"></span></a></li>
-            </ul>
-
-
-        </nav>
-
-
-    </div>
-
-
-</nav>
+    </nav>
 
 
 
@@ -163,7 +204,7 @@
 
 
     <div class="btn-group">
-        <button type="button" class="button"><span><a href="../produtos/todos/todos.html" style="color: whitesmoke">Voltar</a> </span></button>
+        <button type="button" class="button"><span style="color:#fff"><a href="../produtos/emedico/emedico.html" style="color: whitesmoke">Voltar</a> </span></button>
     </div>
 
 </div>
@@ -270,7 +311,4 @@
 
 </body>
 </html>
-
-
-
 
