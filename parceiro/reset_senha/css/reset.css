@@ -1,76 +1,75 @@
-
-
 /*===================MENU=====================*/
 i {
-    color: white;
+   color: white;
 }
 /*===================MENU=====================*/
 
 
 span {
-    color: rgb(56, 102, 81);
+   color: rgb(56, 102, 81);
 }
 
 
 #logotipo-topo {
-    margin-top: -9px;
+   margin-top: -9px;
 }
 
 
 
 #menus {
-    padding-left: 10px;
-    padding-top: 5px;
-    font-size: 15px;
+   padding-left: 10px;
+   padding-top: 5px;
+   font-size: 15px;
 
-    
-    background-color: #080808;
+   
+   background-color: #080808;
 }
 
 
 
 #menus a:hover {
-    color: #fff;
+   color: #fff;
 }
 
 
 
 
 #segundo-menu {
-    font-size: 15px;
-    background-color: #080808;
+   font-size: 15px;
+   background-color: #080808;
 }
 
 
 
 #segundo-menu a {
-    color: #fff;
+   color: #fff;
 }
 
 
 
 #segundo-menu a:hover {
-    background: #808880;
-    color: #f1f1f1;
+   background: #808880;
+   color: #f1f1f1;
 }
 
 
 
 
 #terceiro-menu {
-    font-size: 15px;
-    background-color: #080808;
+   font-size: 15px;
+   background-color: #080808;
 }
 
 #terceiro-menu a {
-    color: #fff;
+   color: #fff;
 }
 
 
 #terceiro-menu a:hover {
-    background: #808880;
-    color: #f1f1f1;
+   background: #808880;
+   color: #f1f1f1;
 }
+
 
 
 
@@ -79,23 +78,24 @@ span {
 
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+   margin-bottom: 0;
+   border-radius: 0;
 }
 
 
 .carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-    min-height:200px;
+   width: 100%; /* Set width to 100% */
+   margin: auto;
+   min-height:200px;
 }
 
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 600px) {
-    .carousel-caption {
-        display: none;
-    }
+   .carousel-caption {
+       display: none;
+   }
 }
+
 
 
 
@@ -119,71 +119,71 @@ span {
 
 /*===================Footer=====================*/
 footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #365B56;
+   font-size: 20px;
+   margin-bottom: 20px;
+   color: #365B56;
 }
 
 /*===================Footer=====================*/
 
 #baixo {
-    background-color: white;
+   background-color: white;
 }
 
 #baixo p {
-    font-size: 15px;
+   font-size: 15px;
 }
 
 
 #txt-footer1 a:link{
-    text-decoration: none;
+   text-decoration: none;
 }
 
 #txt-footer1 a:hover {
-    color: #3b3b3b;
+   color: #3b3b3b;
 }
 
 
 
 
 #txt-footer2 a:link{
-    text-decoration: none;
+   text-decoration: none;
 }
 #txt-footer2 a:hover {
 
-    color: #3b3b3b;
+   color: #3b3b3b;
 }
 
 
 
 #txt-footer3 a:link{
-    text-decoration: none;
+   text-decoration: none;
 }
 
 #txt-footer3 a:hover {
 
-    color: #3b3b3b;
+   color: #3b3b3b;
 }
 
 /*===================logos footer=====================*/
 #ccs {
-    height: 80px;
+   height: 80px;
 }
 
 #iti {
-    height: 80px;
+   height: 80px;
 }
 
 #visa {
-    height: 50px;
+   height: 50px;
 }
 
 #boleto {
-    height: 50px;
+   height: 50px;
 }
 
 #seg {
-    height: 60px;
+   height: 60px;
 }
 /*===================logos footer=====================*/
 
@@ -191,14 +191,14 @@ footer .glyphicon {
 
 /*===================Final=====================*/
 #final {
-    margin-top: 10px;
-    background-color: #365B56;
-
+   margin-top: 10px;
+   background-color: #365B56;
+   
 }
 
 #final p {
 
-    color: whitesmoke;
+   color: whitesmoke;
 
 }
 /*===================Final=====================*/
@@ -213,41 +213,41 @@ footer .glyphicon {
 
 /*===================Space=====================*/
 .space-10{
-    height: 10px;
+   height: 10px;
 }
 
 .space-20{
-    height: 20px;
+   height: 20px;
 }
 
 .space-30{
-    height: 30px;
+   height: 30px;
 }
 
 .space-40{
-    height: 40px;
+   height: 40px;
 }
 .space-50{
-    height: 50px;
+   height: 50px;
 }
 
 .space-60{
-    height: 60px;
+   height: 60px;
 }
 
 .space-70{
-    height: 70px;
+   height: 70px;
 }
 
 .space-80{
-    height: 80px;
+   height: 80px;
 }
 
 .space-90{
-    height: 90px;
+   height: 90px;
 }
 
 .space-100{
-    height: 100px;
+   height: 100px;
 }
 /*===================Space=====================*/
