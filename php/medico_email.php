@@ -48,6 +48,7 @@
             $Mailer->Subject = "E-emedico Compra Site";
             $Mailer->Body = "Compra E-emedico  <br> Nome: $Nome <br> E-Mail: $Email  <br> Telefone: $Telefone <br> Endereco: $Endereco <br> Cidade: $Cidade <br> CEP: $Cep  <br> UF: $Uf";
 
+            
             //Verificar
             if($Mailer->Send()){
                 $Error = false;
@@ -118,7 +119,7 @@
 
                 
 
-                <a class="navbar-brand" href="#" > <img src="../logos/logotipo.png" id="logotipo-topo"> </a>
+                <a class="navbar-brand" href="../index.html" > <img src="../logos/logotipo.png" id="logotipo-topo" alt="logo CCS"> </a>
 
             </div>
 
@@ -128,7 +129,7 @@
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
                         <ul class="dropdown-menu" id="segundo-menu">
 
-                       
+                    
                             <li><a href="../produtos/ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
                             <li><a href="../produtos/epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
                             <li><a href="../produtos/ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
@@ -164,10 +165,12 @@
                         <ul class="dropdown-menu" id="terceiro-menu">
                             <li><a href="../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
                             <li><a href="../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
+                            <li><a href="../parceiro/its/its.html"><span class="fa fa-map-signs"></span> ITS</a></li>
                         </ul>
                     </li>
 
                     <li><a class="scroll" href="../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
+                
 
                 </ul>
 
@@ -185,12 +188,15 @@
 
 
             </nav>
-
-
         </div>
 
-
     </nav>
+
+
+
+
+
+
 
 
 
