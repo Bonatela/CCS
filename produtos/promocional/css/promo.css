@@ -6,7 +6,7 @@ i {
 
 
 span {
-   color: rgb(56, 102, 81);
+   color: #fff;
 }
 
 
@@ -15,40 +15,45 @@ span {
 }
 
 
-
 #menus {
    padding-left: 10px;
    padding-top: 5px;
    font-size: 15px;
 
    
-   background-color: #080808;
+   background-color: #014f5b;
 }
 
 
 
 #menus a:hover {
-   color: #fff;
+   color: #f1f1f1;
 }
 
 
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+   color: #fff;
+   background-color: #014f5b;
+}
 
 
 #segundo-menu {
    font-size: 15px;
-   background-color: #080808;
+   background-color: #014f5b;
+   color: #014f5b;
 }
 
 
 
 #segundo-menu a {
-   color: #fff;
+   background-color: #014f5b;
+   color: #f1f1f1;
 }
 
 
 
 #segundo-menu a:hover {
-   background: #808880;
+   background: #013941;
    color: #f1f1f1;
 }
 
@@ -57,16 +62,19 @@ span {
 
 #terceiro-menu {
    font-size: 15px;
-   background-color: #080808;
+   background-color: #014f5b;
 }
 
+
 #terceiro-menu a {
-   color: #fff;
+   background-color: #014f5b;
+   color: #f1f1f1;
 }
+
 
 
 #terceiro-menu a:hover {
-   background: #808880;
+   background: #013941;
    color: #f1f1f1;
 }
 
@@ -75,9 +83,10 @@ span {
 
 
 
+
 /*===================COMPRA=====================*/
 .panel {
-   border: 1px solid #365B56;
+   border: 1px solid #014f5b;
    border-radius:0 !important;
    transition: box-shadow 0.5s;
 }
@@ -89,16 +98,11 @@ span {
 }
 
 
-.panel-footer .btn:hover {
-   border: 1px solid #365B56;
-   background-color: #3b3b3b !important;
-   color: #f1f1f1;
-}
 
 
 .panel-heading {
    color: #fff !important;
-   background-color: #365B56 !important;
+   background-color: #014f5b !important;
    padding: 25px;
    border-bottom: 1px solid transparent;
    border-top-left-radius: 0px;
@@ -122,11 +126,16 @@ span {
 
 .panel-footer .btn {
    margin: 15px 0;
-   background-color: #365B56;
+   background-color: #0291a7;
    color: #f1f1f1;
 }
 
 
+.panel-footer .btn:hover {
+   border: 1px solid #03c9e7;
+   background-color: #014f5b !important;
+   color: #f1f1f1;
+}
 
 
 
@@ -144,12 +153,10 @@ span {
 
 
 
+
+
 /*===================Footer=====================*/
-footer .glyphicon {
-   font-size: 20px;
-   margin-bottom: 20px;
-   color: #365B56;
-}
+
 
 /*===================Footer=====================*/
 
@@ -219,8 +226,9 @@ footer .glyphicon {
 /*===================Final=====================*/
 #final {
    margin-top: 10px;
-   background-color: #365B56;
-   height: 60px;
+   background-color: #014f5b;
+   height: auto;
+
 }
 
 #final p {
@@ -235,6 +243,7 @@ footer .glyphicon {
 
 
 /*===================Footer=====================*/
+
 
 
 

@@ -103,20 +103,20 @@ span {
 /*===========slider indicator===========*/
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #365B56;
+    color: #014f5b;
 }
 
 .carousel-control.left, .carousel-control.left {
     background-image: none;
-    color: #365B56;
+    color: #014f5b;
 }
 
 .carousel-indicators li {
-    border-color: #365B56;
+    border-color: #014f5b;
 }
 
 .carousel-indicators li.active {
-    background-color: #365B56;
+    background-color: #014f5b;
 }
 /*===========slider indicator===========*/
 /*===================Banner=====================*/
@@ -141,7 +141,7 @@ span {
 
 /*============= botoes do topo ================*/
 .btn-group .button {
-    background-color: #365B56; /* Green */
+    background-color: #014f5b; /* Green */
 
     border: none;
 
@@ -156,7 +156,7 @@ span {
 }
 
 .btn-group .button:hover {
-    background-color: #365B56;
+    background-color: #014f5b;
 }
 
 
@@ -214,7 +214,7 @@ span {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: rgb(56, 102, 81);
+    color: #014f5b;
 }
 
 /*===================Footer=====================*/

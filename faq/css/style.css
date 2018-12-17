@@ -91,7 +91,7 @@ span {
 
 /*============= botoes do topo ================*/
 .btn-group .button {
-    background-color: #365B56; /* Green */
+    background-color: #014f5b; /* Green */
 
     border: none;
 
@@ -106,7 +106,7 @@ span {
 }
 
 .btn-group .button:hover {
-    background-color: #365B56;
+    background-color: #014f5b;
 }
 
 
@@ -144,7 +144,7 @@ span {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: rgb(56, 102, 81);
+    color: #014f5b;
 }
 
 /*===================Footer=====================*/

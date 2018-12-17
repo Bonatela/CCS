@@ -91,7 +91,7 @@ table {
 }
 
 .table {
-    border-bottom: #3b3b3b solid 1px;
+    border-bottom: #014f5b solid 1px;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -112,7 +112,7 @@ table {
 
 .table thead th {
     font-weight: normal;
-    background-color: #365B56;
+    background-color: #014f5b;
     color: #fff;
     font-size: 15px;
 }
@@ -171,13 +171,8 @@ table {
 
 
 
-
 /*===================Footer=====================*/
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #365B56;
-}
+
 
 /*===================Footer=====================*/
 
@@ -247,14 +242,13 @@ footer .glyphicon {
 /*===================Final=====================*/
 #final {
     margin-top: 10px;
-    background-color: #365B56;
-    height: 60px;
+    background-color: #014f5b;
+    height: auto;
+
 }
 
 #final p {
-
     color: whitesmoke;
-
 }
 /*===================Final=====================*/
 
@@ -265,6 +259,8 @@ footer .glyphicon {
 
 
 /*===================Footer=====================*/
+
+
 
 
 
