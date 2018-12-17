@@ -56,7 +56,9 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff; 
+}
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -8932,14 +8934,8 @@ textarea.form-control {
 
 
 
-
-
 /*===================Footer=====================*/
-footer .glyphicon {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #365B56;
-}
+
 
 /*===================Footer=====================*/
 
@@ -9009,14 +9005,13 @@ footer .glyphicon {
 /*===================Final=====================*/
 #final {
   margin-top: 10px;
-  background-color: #365B56;
- 
+  background-color: #014f5b;
+  height: auto;
+
 }
 
 #final p {
-
   color: whitesmoke;
-
 }
 /*===================Final=====================*/
 
@@ -9027,3 +9022,5 @@ footer .glyphicon {
 
 
 /*===================Footer=====================*/
+
+

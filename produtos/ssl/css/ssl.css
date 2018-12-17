@@ -1,3 +1,4 @@
+
 /*===================MENU=====================*/
 i {
     color: white;
@@ -6,7 +7,7 @@ i {
 
 
 span {
-    color: rgb(56, 102, 81);
+    color: #fff;
 }
 
 
@@ -15,40 +16,45 @@ span {
 }
 
 
-
 #menus {
     padding-left: 10px;
     padding-top: 5px;
     font-size: 15px;
 
     
-    background-color: #080808;
+    background-color: #014f5b;
 }
 
 
 
 #menus a:hover {
-    color: #fff;
+    color: #f1f1f1;
 }
 
 
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #014f5b;
+}
 
 
 #segundo-menu {
     font-size: 15px;
-    background-color: #080808;
+    background-color: #014f5b;
+    color: #014f5b;
 }
 
 
 
 #segundo-menu a {
-    color: #fff;
+    background-color: #014f5b;
+    color: #f1f1f1;
 }
 
 
 
 #segundo-menu a:hover {
-    background: #808880;
+    background: #013941;
     color: #f1f1f1;
 }
 
@@ -57,20 +63,21 @@ span {
 
 #terceiro-menu {
     font-size: 15px;
-    background-color: #080808;
+    background-color: #014f5b;
 }
+
 
 #terceiro-menu a {
-    color: #fff;
-}
-
-
-#terceiro-menu a:hover {
-    background: #808880;
+    background-color: #014f5b;
     color: #f1f1f1;
 }
 
 
+
+#terceiro-menu a:hover {
+    background: #013941;
+    color: #f1f1f1;
+}
 
 
 
@@ -162,7 +169,7 @@ span {
 }
 
 .button span:after {
-    content: '\00bb';
+    content: "\2714"; 
     position: absolute;
     opacity: 0;
     top: 0;
@@ -207,7 +214,7 @@ span {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #365B56;
+    color: rgb(56, 102, 81);
 }
 
 /*===================Footer=====================*/
@@ -278,8 +285,9 @@ footer .glyphicon {
 /*===================Final=====================*/
 #final {
     margin-top: 10px;
-    background-color: #365B56;
-    height: 60px;
+    background-color: #014f5b;
+    height: auto;
+
 }
 
 #final p {

@@ -79,7 +79,7 @@
     #selene-navbar {
         padding: 15px;
         border-radius: 3px;
-        background-color: #486763;
+        background-color: #014f5b;
         text-align: left;
     }
     .header_area .navbar {
@@ -96,7 +96,7 @@
     }
     .menu_area #nav .nav-link:hover,
     .header_area.sticky .menu_area #nav .nav-link:hover {
-        color: #486763;
+        color: #014f5b;
         padding-left: 10px;
     }
     .welcome_area {
@@ -211,7 +211,7 @@
     #selene-navbar {
         padding: 15px;
         border-radius: 3px;
-        background-color: #486763;
+        background-color: #014f5b;
         text-align: left;
     }
     .menu_area #nav .nav-link,

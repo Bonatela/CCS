@@ -193,7 +193,7 @@ ol {
     font-size: 24px;
     right: 30px;
     width: 40px;
-    background: #365B56;
+    background: #014f5b;
     color: #fff;
     text-align: center;
     height: 40px;
@@ -230,7 +230,7 @@ p {
 
 .section-heading > h2 {
     font-weight: 300;
-    color: #365B56;
+    color: #014f5b;
     font-size: 48px;
     margin: 0;
 }
@@ -243,7 +243,7 @@ p {
 .line-shape {
     width: 80px;
     height: 2px;
-    background-color: #365B56;
+    background-color: #014f5b;
     margin-top: 15px;
 }
 
@@ -374,7 +374,7 @@ p {
 
 /*cor do menu principal */
 .header_area.sticky {
-    background-color: rgba(72, 103, 99, 0.8);
+    background-color: #014f5b;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     height: 70px;
     position: fixed;
@@ -465,7 +465,7 @@ p {
 
 
 .scroll-down-btn a:hover {
-    color: #365B56;
+    color: #014f5b;
 }
 
 
@@ -473,8 +473,9 @@ p {
 
 .scroll-down-btn a i {
     margin-left: 30px;
-    color: #365B56;
+    color: #014f5b;
 }
+
 
 .app-download-area {
     display: -moz-flex;
@@ -491,7 +492,7 @@ p {
 /*#486763*/
 
 .app-download-btn a {
-    border: 2px solid #365B56;
+    border: 2px solid #014f5b;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -509,13 +510,13 @@ p {
 .app-download-btn.active a,
 .app-download-btn a:hover {
     border-color: transparent;
-    background-color: #365B56;
+    background-color: #014f5b;
 }
 
 
 
 .app-download-btn a i {
-    color: #365B56;
+    color: #014f5b;
     font-size: 24px;
     margin-right: 15px;
     -webkit-transition-duration: 500ms;
@@ -527,7 +528,7 @@ p {
     line-height: 1;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
-    color: #365B56;
+    color: #014f5b;
 }
 
 .app-download-btn a p span {
@@ -633,7 +634,7 @@ p {
 .about-apps-slider .owl-dot {
     width: 10px;
     height: 10px;
-    background-color: #365B56;
+    background-color: #014f5b;
     display: inline-block;
     margin: 0 5px;
     border-radius: 50%;
@@ -787,7 +788,7 @@ p {
 }
 
 .single-feature-area:hover h5 {
-    color: #365B56;
+    color: #014f5b;
 }
 
 .single-feature-area p {
@@ -819,7 +820,7 @@ p {
 
 .single-price-plan {
     background: #ffffff;
-    border-top: 5px solid #365B56;
+    border-top: 5px solid #014f5b;
     margin-bottom: 30px;
     padding: 50px 0 70px;
     box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.15);
@@ -830,14 +831,14 @@ p {
 }
 
 .single-price-plan .package-head .sub-title {
-    color: #365B56;
+    color: #014f5b;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
 
 .single-price-plan .package-head h4 {
-    color: #365B56;
+    color: #014f5b;
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 25px;
@@ -873,7 +874,7 @@ p {
 
 .single-price-plan .plan-button > a,
 .aboutUs-btn > a {
-    background-color: #365B56;
+    background-color: #014f5b;
     color: #ffffff;
     font-size: 13px;
     font-weight: 700;
@@ -897,7 +898,7 @@ p {
 .aboutUs-btn > a:hover,
 .single-price-plan .plan-button > a:focus,
 .aboutUs-btn > a:focus {
-    background-color: #365B56;
+    background-color: #014f5b;
     color: #ffffff;
 }
 
@@ -1043,7 +1044,7 @@ p {
 .single-pie-bar h6 {
     font-size: 18px;
     font-weight: 600;
-    color: #365B56;
+    color: #014f5b;
     margin-top: 30px;
     margin-bottom: 0;
 }
@@ -1120,7 +1121,7 @@ p {
 }
 
 .single_progress_bar h6 {
-    color: #365B56;
+    color: #014f5b;
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -1412,7 +1413,7 @@ p {
 .selene-btn.selene-btn-3:hover,
 .selene-btn.selene-btn-3:focus {
     border: 0 solid transparent;
-    color: #365B56;
+    color: #014f5b;
     background: #fa91b9;
     background: -webkit-linear-gradient(to right, #ccfa87, #fa91b9);
     background: -webkit-linear-gradient(left, #ccfa87, #fa91b9);
@@ -1420,9 +1421,9 @@ p {
 }
 
 .selene-btn.selene-btn-4 {
-    border: 2px solid #365B56;
+    border: 2px solid #014f5b;
     color: #fff;
-    background-color: #365B56;
+    background-color: #014f5b;
 }
 
 .selene-btn.selene-btn-4 span {
@@ -1434,9 +1435,9 @@ p {
 
 .selene-btn.selene-btn-4:hover,
 .selene-btn.selene-btn-4:focus {
-    border: 2px solid #365B56;
-    color: #365B56;
-    background-color: #365B56;
+    border: 2px solid #014f5b;
+    color: #014f5b;
+    background-color: #014f5b;
 }
 
 .selene-cool-facts-area {
@@ -1455,7 +1456,7 @@ p {
 }
 
 .selene-cool-facts-area .cool-facts-content > p {
-    color: #365B56;
+    color: #014f5b;
 }
 
 .selene-search-widget {
@@ -1521,7 +1522,7 @@ p {
 }
 
 .catagory-widget li > a:hover {
-    color: #365B56;
+    color: #014f5b;
 }
 
 .catagory-widget li > a:before {
@@ -1567,7 +1568,7 @@ p {
 
 .selene-tags > a:hover {
     background-color: #fff;
-    color: #365B56;
+    color: #014f5b;
     border: 2px solid;
     border-color: #fa91b9;
 }
@@ -1579,11 +1580,14 @@ p {
 
 
 
+
+
+
 /*===================Footer=====================*/
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #365B56;
+    color: #014f5b;
 }
 
 /*===================Footer=====================*/
@@ -1654,14 +1658,13 @@ footer .glyphicon {
 /*===================Final=====================*/
 #final {
     margin-top: 10px;
-    background-color: #365B56;
-    height: 60px;
+    background-color: #014f5b;
+    height: auto;
+
 }
 
 #final p {
-
     color: whitesmoke;
-
 }
 /*===================Final=====================*/
 
