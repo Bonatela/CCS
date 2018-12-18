@@ -6,7 +6,7 @@
     <meta name="author" content="Guilherme Bonato">
 
 
-    <title>Certificadora Sul</title>
+    <title>Certificadora Sul - Cadastro</title>
 
 
 
@@ -45,11 +45,14 @@
         <!-- bootstrap -->
 
 
+        <!--JS-->
+        <script src="js/cadastro.js"></script>
+
         <!--header icon CSS -->
         <link rel="icon" href="../../logos/favicon.png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/cadastro.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/cadastro.css">
 
     
 
@@ -184,111 +187,114 @@
         <div id="fisica" class="collapse">
             
            
-                
+            
                 <form action="../../php/parceiro/insere_pessoa.php" method="post">
-
-
                     <div class="form-row">
 
 
 
-                        <div class="form-group col-md-6">
-                            <label for="nome">Nome</label>
-                            <input name="nome_razao" type="text" class="form-control" id="nome_razao" placeholder="Nome">
-                        </div>
-
-
-                        <div class="form-group col-md-6">
-                            <label for="email">Email</label>
-                            <input name="email" type="email" class="form-control" id="email" placeholder="email">
-                        </div>
-
-
-                        <div class="form-group col-md-6">
-                            <label for="telefone">Telefone</label>
-                            <input name="telefone" type="text" class="form-control" id="telefone"  pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" placeholder="(00) 00000-0000">
-                        </div>
-
-                        <div class="form-group col-md-6">
-                            <label for="cpf">CPF</label>
-                            <input name="cpf_cnpj" type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
-                        </div>
-
-
-                        <div class="form-group col-md-6">
-                                <label for="inputCity">Cidade</label>
-                                <input name="cidade" type="text" class="form-control" id="cidade">
-                        </div>
-        
-
-                            <div class="form-group col-md-4">
-                                <label for="inputEstado">Estado</label>
-                                <select name="estado"  id="estado" class="form-control">
-                                    <option selected>Escolher...</option>
-                                    <option>AC</option>
-                                    <option>AL</option>
-                                    <option>AP</option>
-                                    <option>AM</option>
-                                    <option>BA</option>
-                                    <option>CE</option>
-                                    <option>DF</option>
-                                    <option>ES</option>
-                                    <option>GO</option>
-                                    <option>MA</option>
-                                    <option>MT</option>
-                                    <option>MS</option>
-                                    <option>MG</option>
-                                    <option>PA</option>
-                                    <option>PB</option>
-                                    <option>PR</option>
-                                    <option>PE</option>
-                                    <option>PI</option>
-                                    <option>RJ</option>
-                                    <option>RN</option>
-                                    <option>RS</option>
-                                    <option>RO</option>
-                                    <option>RR</option>
-                                    <option>SC</option>
-                                    <option>SP</option>
-                                    <option>SE</option>
-                                    <option>TO</option>
-                                </select>
-                            </div>
-        
-                            <div class="form-group col-md-2">
-                                
-                                <label for="inputCEP">CEP</label>
-                                <input name="cep" type="text" class="form-control" id="cep" placeholder="00000-000">
-                            
-                            </div>
-        
-
                             <div class="form-group col-md-6">
-                                <label for="end">Endereço</label>
-                                <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua / Avenida, nº 0">
-                            </div>
-
-            
-                                <div class="form-group col-md-6">
-                                    <label for="nome">Senha</label>
-                                    <input name="senha" type="password" class="form-control" id="senha" placeholder="Senha">
+                                    <label for="nome">Nome</label>
+                                    <input name="nome_razao" type="text" class="form-control" id="nome_razao" placeholder="Nome">
                                 </div>
-
-                    </div>
-
+        
+        
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="email">
+                                </div>
+        
+        
+                                <div class="form-group col-md-6">
+                                    <label for="telefone">Telefone</label>
+                                    <input name="telefone" type="text" class="form-control" id="telefone"  pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" placeholder="(00) 00000-0000">
+                                </div>
+        
+        
+                                <div class="form-group col-md-6">
+                                    <label for="cpf">CPF</label>
+                                    <input name="cpf_cnpj" type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
+                                </div>
+        
+        
+                                <div class="form-group col-md-6">
+                                        <label for="inputCity">Cidade</label>
+                                        <input name="cidade" type="text" class="form-control" id="cidade">
+                                </div>
                 
-                    <br>
+        
+                                <div class="form-group col-md-4">
+                                        <label for="inputEstado">Estado</label>
+                                        <select name="estado"  id="estado" class="form-control">
+                                            <option selected>Escolher...</option>
+                                            <option>AC</option>
+                                            <option>AL</option>
+                                            <option>AP</option>
+                                            <option>AM</option>
+                                            <option>BA</option>
+                                            <option>CE</option>
+                                            <option>DF</option>
+                                            <option>ES</option>
+                                            <option>GO</option>
+                                            <option>MA</option>
+                                            <option>MT</option>
+                                            <option>MS</option>
+                                            <option>MG</option>
+                                            <option>PA</option>
+                                            <option>PB</option>
+                                            <option>PR</option>
+                                            <option>PE</option>
+                                            <option>PI</option>
+                                            <option>RJ</option>
+                                            <option>RN</option>
+                                            <option>RS</option>
+                                            <option>RO</option>
+                                            <option>RR</option>
+                                            <option>SC</option>
+                                            <option>SP</option>
+                                            <option>SE</option>
+                                            <option>TO</option>
+                                        </select>
+                                </div>
+                
+                                <div class="form-group col-md-2">
+                                        
+                                        <label for="inputCEP">CEP</label>
+                                        <input name="cep" type="text" class="form-control" id="cep" placeholder="00000-000">
+                                    
+                                </div>
+                
+        
+                                <div class="form-group col-md-6">
+                                        <label for="end">Endereço</label>
+                                        <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua / Avenida, nº 0">
+                                </div>
+        
+                    
+                                <div class="form-group col-md-6">
+                                            <label for="nome">Senha</label>
+                                            <input name="senha" type="password" class="form-control" id="senha" placeholder="Senha">
+                                </div>
+        
+                        
+        
+                        
+                                <br>
+        
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+        
+        
+                            <!--oculto -->
+                                <div class="form-group col-md-6">
+                                    <input name="tipo_pessoa" type="hidden" class="form-control" id="tipo_pessoa" value="p_f">
+                                </div>
+                            <!--oculto -->
+        
 
-                    <div class="col-sm-4">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+
                     </div>
-
-
-
-                    <div class="form-group col-md-6">
-                            <input name="tipo_pessoa" type="hidden" class="form-control" id="tipo_pessoa" value="p_f">
-                        </div>
-
                 </form>
 
         
@@ -525,11 +531,13 @@
 
 
 
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+        (function(){ var widget_id = 'EWPoJVPCeA';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        </script>
+        <!-- {/literal} END JIVOSITE CODE -->
 
 
-
- <!--JS-->
- <script src="js/cadastro.js"></script>
 
 </body>
 </html>

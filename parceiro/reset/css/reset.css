@@ -1,3 +1,6 @@
+
+
+
 /*===================MENU=====================*/
 i {
    color: white;
@@ -81,32 +84,6 @@ span {
 
 
 
-/*============= botoes do topo ================*/
-.btn-group .button {
-   background-color: #014f5b; /* Green */
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   cursor: pointer;
-   float: left;
-}
-
-
-
-.btn-group .button:hover {
-   background-color: #013941;
-}
-
-
-
-
-
-
-
 
 
 
@@ -130,7 +107,7 @@ span {
 }
 
 #txt-footer1 a:hover {
-   color: #014f5b;
+   color: #3b3b3b;
 }
 
 
@@ -152,7 +129,7 @@ span {
 
 #txt-footer3 a:hover {
 
-   color: #014f5b;
+   color: #3b3b3b;
 }
 
 /*===================logos footer=====================*/
@@ -199,8 +176,6 @@ span {
 
 
 /*===================Footer=====================*/
-
-
 
 
 
