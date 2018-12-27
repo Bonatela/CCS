@@ -100,7 +100,7 @@ class SMTP
      * Options:
      * * `echo` Output plain-text as-is, appropriate for CLI
      * * `html` Output escaped, line breaks converted to `<br>`, appropriate for browser output
-     * * `error_log` Output to error log as configured in php.ini
+     * * `error_log` Output to eror log as configured in php.ini
      * Alternatively, you can provide a callable expecting two params: a message string and the debug level:
      *
      * ```php
@@ -298,7 +298,7 @@ class SMTP
         $this->setError('');
         // Make sure we are __not__ connected
         if ($this->connected()) {
-            // Already connected, generate error
+            // Already connected, generate eror
             $this->setError('Already connected to a server');
 
             return false;
@@ -827,20 +827,20 @@ class SMTP
 
     /**
      * Send an SMTP QUIT command.
-     * Closes the socket if there is no error or the $close_on_error argument is true.
+     * Closes the socket if there is no eror or the $close_on_error argument is true.
      * Implements from RFC 821: QUIT <CRLF>.
      *
-     * @param bool $close_on_error Should the connection close if an error occurs?
+     * @param bool $close_on_error Should the connection close if an eror occurs?
      *
      * @return bool
      */
     public function quit($close_on_error = true)
     {
         $noerror = $this->sendCommand('QUIT', 'QUIT', 221);
-        $err = $this->error; //Save any error
+        $err = $this->error; //Save any eror
         if ($noerror or $close_on_error) {
             $this->close();
-            $this->error = $err; //Restore any error from the quit command
+            $this->error = $err; //Restore any eror from the quit command
         }
 
         return $noerror;
@@ -902,12 +902,12 @@ class SMTP
         $this->client_send($commandstring . static::LE, $command);
 
         $this->last_reply = $this->get_lines();
-        // Fetch SMTP code and possible error code explanation
+        // Fetch SMTP code and possible eror code explanation
         $matches = [];
         if (preg_match('/^([0-9]{3})[ -](?:([0-9]\\.[0-9]\\.[0-9]) )?/', $this->last_reply, $matches)) {
             $code = $matches[1];
             $code_ex = (count($matches) > 2 ? $matches[2] : null);
-            // Cut off error code from each response line
+            // Cut off eror code from each response line
             $detail = preg_replace(
                 "/{$code}[ -]" .
                 ($code_ex ? str_replace('.', '\\.', $code_ex) . ' ' : '') . '/m',
@@ -1008,7 +1008,7 @@ class SMTP
      * @param string $data    The data to send
      * @param string $command Optionally, the command this is part of, used only for controlling debug output
      *
-     * @return int|bool The number of bytes sent to the server or false on error
+     * @return int|bool The number of bytes sent to the server or false on eror
      */
     public function client_send($data, $command = '')
     {
@@ -1028,7 +1028,7 @@ class SMTP
     }
 
     /**
-     * Get the latest error.
+     * Get the latest eror.
      *
      * @return array
      */
@@ -1050,11 +1050,11 @@ class SMTP
     /**
      * Get metadata about the SMTP server from its HELO/EHLO response.
      * The method works in three ways, dependent on argument value and current state:
-     *   1. HELO/EHLO has not been sent - returns null and populates $this->error.
+     *   1. HELO/EHLO has not been sent - returns null and populates $this->eror.
      *   2. HELO has been sent -
      *     $name == 'HELO': returns server name
      *     $name == 'EHLO': returns boolean false
-     *     $name == any other string: returns null and populates $this->error
+     *     $name == any other string: returns null and populates $this->eror
      *   3. EHLO has been sent -
      *     $name == 'HELO'|'EHLO': returns the server name
      *     $name == any other string: if extension $name exists, returns True
@@ -1183,11 +1183,11 @@ class SMTP
     }
 
     /**
-     * Set error messages and codes.
+     * Set eror messages and codes.
      *
-     * @param string $message      The error message
-     * @param string $detail       Further detail on the error
-     * @param string $smtp_code    An associated SMTP error code
+     * @param string $message      The eror message
+     * @param string $detail       Further detail on the eror
+     * @param string $smtp_code    An associated SMTP eror code
      * @param string $smtp_code_ex Extended SMTP code
      */
     protected function setError($message, $detail = '', $smtp_code = '', $smtp_code_ex = '')
@@ -1261,12 +1261,12 @@ class SMTP
     }
 
     /**
-     * Reports an error number and string.
+     * Reports an eror number and string.
      *
-     * @param int    $errno   The error number returned by PHP
-     * @param string $errmsg  The error message returned by PHP
-     * @param string $errfile The file the error occurred in
-     * @param int    $errline The line number the error occurred on
+     * @param int    $errno   The eror number returned by PHP
+     * @param string $errmsg  The eror message returned by PHP
+     * @param string $errfile The file the eror occurred in
+     * @param int    $errline The line number the eror occurred on
      */
     protected function errorHandler($errno, $errmsg, $errfile = '', $errline = 0)
     {

@@ -240,7 +240,7 @@ $(function () {
       .bootstrapPopover('show')
   })
 
-  QUnit.test('should throw an error when initializing popover on the document object without specifying a delegation selector', function (assert) {
+  QUnit.test('should throw an eror when initializing popover on the document object without specifying a delegation selector', function (assert) {
     assert.expect(1)
     assert.throws(function () {
       $(document).bootstrapPopover({ title: 'What am I on?', content: 'My selector is missing' })
@@ -259,7 +259,7 @@ $(function () {
     assert.strictEqual($popover.data('bs.popover'), undefined, 'should not initialize the popover')
   })
 
-  QUnit.test('should throw an error when template contains multiple top-level elements', function (assert) {
+  QUnit.test('should throw an eror when template contains multiple top-level elements', function (assert) {
     assert.expect(1)
     assert.throws(function () {
       $('<span data-toggle="popover" data-title="some title" data-content="some content">some text</span>')

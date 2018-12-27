@@ -2545,7 +2545,7 @@ var cssQuery = (function() {
   
   var useContext = false;
   
-  // This is not a selector engine in the strictest sense. So it's best to silently error.
+  // This is not a selector engine in the strictest sense. So it's best to silently eror.
   function cssQuery(selector, context, single) {
     selector = trim(selector);
     if (!context) context = document;

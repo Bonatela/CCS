@@ -1,16 +1,72 @@
-<!doctype html>
+<?php
+
+            // Recuperadno os Dados Enviados pelo Form
+            $GetPost = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
+            $Error = true;
+
+
+            //Variaveis Locais
+            $Email = $GetPost['email'];
+            $Telefone = $GetPost['telefone'];
+            $Nome = $GetPost['nome'];
+            $Endereco = $GetPost['end'];
+            $Cidade = $GetPost['cidade'];
+            $Uf = $GetPost['uf'];
+            $Cep = $GetPost['cep'];
+
+
+
+
+
+            //Incluir PHP MAILER
+            include_once 'mailer/src/SMTP.php';
+            include_once 'mailer/src/PHPMailer.php';
+
+
+            //Enviando o e-mail Classe phpmail
+
+            $Mailer = new \PHPMailer\PHPMailer\PHPMailer();
+
+            $Mailer->CharSet = "utf8";
+            $Mailer->IsSMTP();
+
+            $Mailer->Host = "certificadorasul.com.br";
+
+            $Mailer->SMTPAuth = true;
+            $Mailer->Username = "site@certificadorasul.com.br";
+            $Mailer->Password = "134679";
+            $Mailer->SMTPSecure = "tls";
+            $Mailer->Port = 587;
+
+            $Mailer->FromName = "($Nome)";
+            $Mailer->From = "site@certificadorasul.com.br";
+            $Mailer->AddAddress("sac@certificadorasul.com.br","site@certificadorasul.com.br");
+
+            $Mailer->IsHTML(true);
+
+            $Mailer->Subject = "E-emedico Compra Site";
+            $Mailer->Body = "Compra E-emedico  <br> Nome: $Nome <br> E-Mail: $Email  <br> Telefone: $Telefone <br> Endereco: $Endereco <br> Cidade: $Cidade <br> CEP: $Cep  <br> UF: $Uf";
+
+            
+            //Verificar
+            if($Mailer->Send()){
+                $Error = false;
+            }
+
+
+?>
+
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Guilherme Bonato">
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Guilherme Bonato">
 
 
-    <title>ITS</title>
+        <title>Certificadora Sul</title>
 
-
-
-
+       
 
         <!-- bootstrap -->
 
@@ -34,19 +90,22 @@
         <!-- bootstrap -->
 
 
+        <!--header icon CSS -->
+        <link rel="icon" href="../../logos/favicon.png">
 
 
-    <!--header icon CSS -->
-    <link rel="icon" href="../../logos/favicon.png">
+        <!--CSS -->
+        <link rel="stylesheet" href="../return/css/css.css">
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
+   
 
-    
+   
+
+
+
 </head>
 <body>
-
 
 
     <!--menu-->
@@ -60,7 +119,7 @@
 
                 
 
-                <a class="navbar-brand" href="../../index.html" > <img src="../../logos/logotipo.png" id="logotipo-topo"> </a>
+                <a class="navbar-brand" href="../../index.html" > <img src="../../logos/logotipo.png" id="logotipo-topo" alt="logo CCS"> </a>
 
             </div>
 
@@ -70,7 +129,7 @@
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
                         <ul class="dropdown-menu" id="segundo-menu">
 
-                       
+                    
                             <li><a href="../../produtos/ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
                             <li><a href="../../produtos/epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
                             <li><a href="../../produtos/ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
@@ -85,6 +144,7 @@
                             <li><a href="../../produtos/ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
                             <li><a href="../../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
                             <li><a href="../../produtos/conectividade/conectividade.html"><span class="fa fa-handshake-o"></span>&nbsp; Conectividade</a></li>
+
 
 
                         </ul>
@@ -105,18 +165,19 @@
                         <ul class="dropdown-menu" id="terceiro-menu">
                             <li><a href="../../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
                             <li><a href="../../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
-                            <li><a href="../its/its.html"><span class="fa fa-map-signs"></span> ITS</a></li>
+                            <li><a href="../../parceiro/its/its.html"><span class="fa fa-map-signs"></span> ITS</a></li>
                         </ul>
                     </li>
 
-                    <li><a class="scroll" href="../parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
+                    <li><a class="scroll" href="../../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
+                
 
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     &nbsp;
-                    <li><a href="../cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
-                    <li><a href="../login/login.html"><span class="fa fa-users"></span> Logar</a></li>
+                    <li><a href="../../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
+                    <li><a href="../../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -127,27 +188,38 @@
 
 
             </nav>
-
-
         </div>
-
 
     </nav>
 
 
+
+
+
+
+
+
+
+
+<div class="space-80"></div>
+
+<div class="container" align="center">
+
     <div class="space-80"></div>
-
-   
-
+    <h2>Mensagem enviada com sucesso!</h2>
 
 
+    <div class="btn-group">
+        <button type="button" class="button"><span style="color:#fff"><a href="../../produtos/emedico/emedico.html" style="color: whitesmoke">Voltar</a> </span></button>
+    </div>
+
+</div>
+
+<div class="space-80"></div>
 
 
-    <div class="space-80"></div>
 
-
-
-
+<hr>
 <!-- Links Footer -->
 <div class="jumbotron" id="baixo">
     <div class="container" align="left">
@@ -241,12 +313,8 @@
 <!-- Links Footer -->
 
 
-    <!-- BEGIN JIVOSITE CODE {literal} -->
-    <script type='text/javascript'>
-    (function(){ var widget_id = 'EWPoJVPCeA';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
-    <!-- {/literal} END JIVOSITE CODE -->
 
 
 </body>
 </html>
+

@@ -28,7 +28,7 @@ namespace PHPMailer\PHPMailer;
 class Exception extends \Exception
 {
     /**
-     * Prettify error message output.
+     * Prettify eror message output.
      *
      * @return string
      */

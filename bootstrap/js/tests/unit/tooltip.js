@@ -813,7 +813,7 @@ $(function () {
     $styles.remove()
   })
 
-  QUnit.test('should not error when trying to show an auto-placed tooltip that has been removed from the dom', function (assert) {
+  QUnit.test('should not eror when trying to show an auto-placed tooltip that has been removed from the dom', function (assert) {
     assert.expect(1)
     var passed = true
     var $tooltip = $('<a href="#" rel="tooltip" title="Another tooltip"/>')
@@ -830,7 +830,7 @@ $(function () {
       console.log(err)
     }
 
-    assert.ok(passed, '.tooltip(\'show\') should not throw an error if element no longer is in dom')
+    assert.ok(passed, '.tooltip(\'show\') should not throw an eror if element no longer is in dom')
   })
 
   QUnit.test('should place tooltip on top of element', function (assert) {
@@ -1255,7 +1255,7 @@ $(function () {
     $element.bootstrapTooltip('show')
   })
 
-  QUnit.test('should throw an error when initializing tooltip on the document object without specifying a delegation selector', function (assert) {
+  QUnit.test('should throw an eror when initializing tooltip on the document object without specifying a delegation selector', function (assert) {
     assert.expect(1)
     assert.throws(function () {
       $(document).bootstrapTooltip({ title: 'What am I on?' })
@@ -1274,7 +1274,7 @@ $(function () {
     assert.strictEqual($tooltip.data('bs.tooltip'), undefined, 'should not initialize the tooltip')
   })
 
-  QUnit.test('should throw an error when template contains multiple top-level elements', function (assert) {
+  QUnit.test('should throw an eror when template contains multiple top-level elements', function (assert) {
     assert.expect(1)
     assert.throws(function () {
       $('<a href="#" data-toggle="tooltip" title="Another tooltip"></a>')

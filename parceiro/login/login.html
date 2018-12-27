@@ -49,9 +49,15 @@
 				<link rel="stylesheet" type="text/css" href="css/util.css">
 				<link rel="stylesheet" type="text/css" href="css/main.css">
 			<!--===============================================================================================-->
-		  
-		  <!-- CSS -->
-        <link rel="stylesheet" href="css/cadastro.css">
+
+		<!--JS-->
+		<script src="js/mask.js"></script>
+
+		<!-- Latest mask and minified JS -->
+		<script src="../../bootstrap/jquery.mask.min.js"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/cadastro.css">
 
     
 
@@ -169,22 +175,22 @@
 					</div>
 
 
-					<form class="login100-form validate-form">
+					<form class="login100-form validate-form" action="../../php/sql/validar_acesso.php" method="post">
 						
 
 					
 						<div class="wrap-input100 validate-input">
-							<input class="input100" type="text" name="email" placeholder="Email - CPF/CNPJ">
+							<input class="input100" name="cpf_cnpj" id="cpf_cnpj" placeholder="CPF/CNPJ">
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<i class="fa fa-address-card-o" aria-hidden="true"></i>
 							</span>
 						</div>
 
 
 
 						<div class="wrap-input100 validate-input">
-							<input class="input100" type="password" name="pass" placeholder="Senha">
+							<input class="input100" type="password" id="senha" name="senha" placeholder="Senha">
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-lock" aria-hidden="true"></i>
@@ -193,16 +199,14 @@
 						
 
 						<div class="container-login100-form-btn">
-							<button class="login100-form-btn">
-								Logar
-							</button>
+							<button class="login100-form-btn" id="btn_login">Logar</button>
 						</div>
 
 						<div class="text-center p-t-12">
 							<span class="txt1">
 								Esqueceu seu
 							</span>
-							<a class="txt2" href="../reset/reset.html">
+							<a class="txt2" href="#">
 								Usuario / Senha?
 							</a>
 

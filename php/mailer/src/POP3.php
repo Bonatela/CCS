@@ -187,7 +187,7 @@ class POP3
         $this->do_debug = $debug_level;
         $this->username = $username;
         $this->password = $password;
-        //  Reset the error log
+        //  Reset the eror log
         $this->errors = [];
         //  connect
         $result = $this->connect($this->host, $this->port, $this->tval);
@@ -221,7 +221,7 @@ class POP3
             return true;
         }
 
-        //On Windows this will raise a PHP Warning error if the hostname doesn't exist.
+        //On Windows this will raise a PHP Warning eror if the hostname doesn't exist.
         //Rather than suppress it with @fsockopen, capture it cleanly instead
         set_error_handler([$this, 'catchWarning']);
 
@@ -237,7 +237,7 @@ class POP3
             $errstr, //  Error Message
             $tval
         ); //  Timeout (seconds)
-        //  Restore the error handler
+        //  Restore the eror handler
         restore_error_handler();
 
         //  Did we connect?
@@ -365,7 +365,7 @@ class POP3
     protected function checkResponse($string)
     {
         if (substr($string, 0, 3) !== '+OK') {
-            $this->setError("Server reported an error: $string");
+            $this->setError("Server reported an eror: $string");
 
             return false;
         }
@@ -374,7 +374,7 @@ class POP3
     }
 
     /**
-     * Add an error to the internal error store.
+     * Add an eror to the internal eror store.
      * Also display debug output if it's enabled.
      *
      * @param string $error
@@ -392,7 +392,7 @@ class POP3
     }
 
     /**
-     * Get an array of error messages, if any.
+     * Get an array of eror messages, if any.
      *
      * @return array
      */
@@ -402,7 +402,7 @@ class POP3
     }
 
     /**
-     * POP3 connection error handler.
+     * POP3 connection eror handler.
      *
      * @param int    $errno
      * @param string $errstr

@@ -1,5 +1,6 @@
 <?php
 
+
             // Recuperadno os Dados Enviados pelo Form
             $GetPost = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -45,10 +46,9 @@
 
             $Mailer->IsHTML(true);
 
-            $Mailer->Subject = "OAB Compra Site";
-            $Mailer->Body = "Compra E-emedico  <br> Nome: $Nome <br> E-Mail: $Email  <br> Telefone: $Telefone <br> Endereco: $Endereco <br> Cidade: $Cidade <br> CEP: $Cep  <br> UF: $Uf";
+            $Mailer->Subject = "SSL Compra Site";
+            $Mailer->Body = "Compra SSL  <br> Nome: $Nome <br> E-Mail: $Email  <br> Telefone: $Telefone <br> Endereco: $Endereco <br> Cidade: $Cidade <br> CEP: $Cep  <br> UF: $Uf";
 
-            
             //Verificar
             if($Mailer->Send()){
                 $Error = false;
@@ -56,6 +56,8 @@
 
 
 ?>
+
+
 
 <html>
 <head>
@@ -75,27 +77,27 @@
 
 
             <!-- Latest compiled and minified CSS -->
-            <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css">
 
             <!-- jQuery library -->
-            <script src="../bootstrap/jquery-3.3.1.js"></script>
+            <script src="../../bootstrap/jquery-3.3.1.js"></script>
 
             <!-- Latest compiled JavaScript -->
-            <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
             
 
             <!--Normalize V8-->
-            <script src="../bootstrap/v8.js"></script>
+            <script src="../../bootstrap/v8.js"></script>
             
         <!-- bootstrap -->
 
 
         <!--header icon CSS -->
-        <link rel="icon" href="../logos/favicon.png">
+        <link rel="icon" href="../../logos/favicon.png">
 
 
         <!--CSS -->
-        <link rel="stylesheet" href="return/css/css.css">
+        <link rel="stylesheet" href="../return/css/css.css">
 
 
    
@@ -119,7 +121,7 @@
 
                 
 
-                <a class="navbar-brand" href="../index.html" > <img src="../logos/logotipo.png" id="logotipo-topo" alt="logo CCS"> </a>
+                <a class="navbar-brand" href="#" > <img src="../../logos/logotipo.png" id="logotipo-topo"> </a>
 
             </div>
 
@@ -129,21 +131,21 @@
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
                         <ul class="dropdown-menu" id="segundo-menu">
 
-                    
-                            <li><a href="../produtos/ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
-                            <li><a href="../produtos/epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
-                            <li><a href="../produtos/ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
-                            <li><a href="../produtos/nfe/nfe.html"><span class="fa fa-barcode"></span>&nbsp; NF-e</a></li>
-                            <li><a href="../produtos/cte/cte.html"><span class="fa fa-truck"></span>&nbsp; CT-e</a></li>
+                       
+                            <li><a href="../../produtos/ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
+                            <li><a href="../../produtos/epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
+                            <li><a href="../../produtos/ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
+                            <li><a href="../../produtos/nfe/nfe.html"><span class="fa fa-barcode"></span>&nbsp; NF-e</a></li>
+                            <li><a href="../../produtos/cte/cte.html"><span class="fa fa-truck"></span>&nbsp; CT-e</a></li>
 
 
 
-                            <li><a href="../produtos/bancario/bancario.html"><span class="fa fa-bank"></span>&nbsp; CIP</a></li>
-                            <li><a href="../produtos/oab/oab.html"><span class="fa fa-legal"></span> OAB</a></li>
-                            <li><a href="../produtos/emedico/emedico.html"><span class="fa fa-stethoscope"></span>&nbsp; e-Medico</a></li>
-                            <li><a href="../produtos/ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
-                            <li><a href="../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
-                            <li><a href="../produtos/conectividade/conectividade.html"><span class="fa fa-handshake-o"></span>&nbsp; Conectividade</a></li>
+                            <li><a href="../../produtos/bancario/bancario.html"><span class="fa fa-bank"></span>&nbsp; CIP</a></li>
+                            <li><a href="../../produtos/oab/oab.html"><span class="fa fa-legal"></span> OAB</a></li>
+                            <li><a href="../../produtos/emedico/emedico.html"><span class="fa fa-stethoscope"></span>&nbsp; e-Medico</a></li>
+                            <li><a href="../../produtos/ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
+                            <li><a href="../../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
+                            <li><a href="../../produtos/conectividade/conectividade.html"><span class="fa fa-handshake-o"></span>&nbsp; Conectividade</a></li>
 
 
 
@@ -153,31 +155,29 @@
 
 
 
-                    <li><a href="../produtos/bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
-                    <li><a href="../produtos/ssl/ssl.html"><span class="fa fa-shield"></span> SSL</a></li>
-                    <li><a href="../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
-                    <li><a class="scroll" href="../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
-                    <li><a href="../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
+                    <li><a href="../../produtos/bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
+                    <li><a href="../../produtos/ssl/ssl.html"><span class="fa fa-shield"></span> SSL</a></li>
+                    <li><a href="../../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
+                    <li><a class="scroll" href="../../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
+                    <li><a href="../../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
 
 
 
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre<span class="caret"></span></a>
                         <ul class="dropdown-menu" id="terceiro-menu">
-                            <li><a href="../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
-                            <li><a href="../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
-                            <li><a href="../parceiro/its/its.html"><span class="fa fa-map-signs"></span> ITS</a></li>
+                            <li><a href="../../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
+                            <li><a href="../../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
                         </ul>
                     </li>
 
-                    <li><a class="scroll" href="../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
-                
+                    <li><a class="scroll" href="../../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
 
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     &nbsp;
-                    <li><a href="../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
-                    <li><a href="../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
+                    <li><a href="../../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
+                    <li><a href="../../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -188,15 +188,12 @@
 
 
             </nav>
+
+
         </div>
 
+
     </nav>
-
-
-
-
-
-
 
 
 
@@ -210,7 +207,7 @@
 
 
     <div class="btn-group">
-        <button type="button" class="button"><span style="color:#fff"><a href="../produtos/oab/oab.html" style="color: whitesmoke">Voltar</a> </span></button>
+        <button type="button" class="button"><span style="color:#fff"><a href="../../produtos/ssl/ssl.html" style="color: whitesmoke">Voltar</a> </span></button>
     </div>
 
 </div>
@@ -267,14 +264,14 @@
                             R. 15 de Janeiro 373 – 8º Andar<br>Centro Canoas - RS – CEP: 92.010-300
                         </p>
 
-                        <p><span style="color:#014f5b" class="fa fa-phone "></span> <a href="tel:5130314832"> 3031 - 4832</a>
+                        <p><span class="fa fa-phone "></span> <a href="tel:5130314832"> 3031 - 4832</a>
 
                             &nbsp;
-                            <a href="https://www.facebook.com/CertificadoraSul/" > <span style="color:#014f5b" class="fa fa-facebook-official fa-2x"></span></a>
+                            <a href="https://www.facebook.com/CertificadoraSul/" > <span class="fa fa-facebook-official fa-2x"></span></a>
                             &nbsp;
-                            <a href="https://www.instagram.com/certificadorasul/?hl=pt-br" > <span style="color:#014f5b" class="fa fa-instagram fa-2x"></span></a>
+                            <a href="https://www.instagram.com/certificadorasul/?hl=pt-br" > <span class="fa fa-instagram fa-2x"></span></a>
                             &nbsp;
-                            <a href="https://twitter.com/CompanhiaSul" > <span style="color:#014f5b" class="fa fa-twitter fa-2x"></span></a></p>
+                            <a href="https://twitter.com/CompanhiaSul" > <span class="fa fa-twitter fa-2x"></span></a></p>
 
                     </div>
                     <br><br><br>
@@ -285,11 +282,11 @@
 
                 <div class="container-fluid" align="center" id="img-footer">
 
-                    <img src="../logos/ccs.png" id="ccs">
-                    <img src="../logos/iti.png" id="iti">
-                    <img src="../logos/visa.jpg" id="visa">
-                    <img src="../logos/boleto.jpg" id="boleto">
-                    <img src="../logos/seg.png" id="seg">
+                    <img src="../../logos/ccs.png" id="ccs">
+                    <img src="../../logos/iti.png" id="iti">
+                    <img src="../../logos/visa.jpg" id="visa">
+                    <img src="../../logos/boleto.jpg" id="boleto">
+                    <img src="../../logos/seg.png" id="seg">
                 </div>
 
 

@@ -78,7 +78,7 @@ class PHPMailer
     public $Encoding = self::ENCODING_8BIT;
 
     /**
-     * Holds the most recent mailer error message.
+     * Holds the most recent mailer eror message.
      *
      * @var string
      */
@@ -361,7 +361,7 @@ class PHPMailer
      * Options:
      * * `echo` Output plain-text as-is, appropriate for CLI
      * * `html` Output escaped, line breaks converted to `<br>`, appropriate for browser output
-     * * `error_log` Output to error log as configured in php.ini
+     * * `error_log` Output to eror log as configured in php.ini
      * By default PHPMailer will use `echo` if run from a `cli` or `cli-server` SAPI, `html` otherwise.
      * Alternatively, you can provide a callable expecting two params: a message string and the debug level:
      *
@@ -718,7 +718,7 @@ class PHPMailer
     const STOP_CONTINUE = 1;
 
     /**
-     * Error severity: message, plus full stop, critical error reached.
+     * Error severity: message, plus full stop, critical eror reached.
      *
      * @var int
      */
@@ -1340,7 +1340,7 @@ class PHPMailer
      *
      * @throws Exception
      *
-     * @return bool false on error - See the ErrorInfo property for details of the error
+     * @return bool false on eror - See the ErrorInfo property for details of the eror
      */
     public function send()
     {
@@ -1811,7 +1811,7 @@ class PHPMailer
             );
         }
 
-        //Create error message for any bad addresses
+        //Create eror message for any bad addresses
         if (count($bad_rcpt) > 0) {
             $errstr = '';
             foreach ($bad_rcpt as $bad) {
@@ -1977,7 +1977,7 @@ class PHPMailer
     }
 
     /**
-     * Set the language for error messages.
+     * Set the language for eror messages.
      * Returns false if it cannot load the language file.
      * The default language is English.
      *
@@ -2021,7 +2021,7 @@ class PHPMailer
             'recipients_failed' => 'SMTP Error: The following recipients failed: ',
             'signing' => 'Signing Error: ',
             'smtp_connect_failed' => 'SMTP connect() failed.',
-            'smtp_error' => 'SMTP server error: ',
+            'smtp_error' => 'SMTP server eror: ',
             'variable_set' => 'Cannot set or reset variable: ',
             'extension_missing' => 'Extension missing: ',
         ];
@@ -3538,7 +3538,7 @@ class PHPMailer
     }
 
     /**
-     * Add an error message to the error container.
+     * Add an eror message to the eror container.
      *
      * @param string $msg
      */
@@ -3638,7 +3638,7 @@ class PHPMailer
     }
 
     /**
-     * Get an error message in the current language.
+     * Get an eror message in the current language.
      *
      * @param string $key
      *
@@ -3666,9 +3666,9 @@ class PHPMailer
     }
 
     /**
-     * Check if an error occurred.
+     * Check if an eror occurred.
      *
-     * @return bool True if an error did occur
+     * @return bool True if an eror did occur
      */
     public function isError()
     {
@@ -4041,7 +4041,7 @@ class PHPMailer
 
     /**
      * Set or reset instance properties.
-     * You should avoid this function - it's more verbose, less efficient, more error-prone and
+     * You should avoid this function - it's more verbose, less efficient, more eror-prone and
      * harder to debug than setting properties directly.
      * Usage Example:
      * `$mail->set('SMTPSecure', 'tls');`
