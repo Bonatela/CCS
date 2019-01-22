@@ -18,8 +18,8 @@
 
 
     //Incluir PHP MAILER
-    include_once 'mailer/src/SMTP.php';
-    include_once 'mailer/src/PHPMailer.php';
+    include_once '../mailer/src/SMTP.php';
+    include_once '../mailer/src/PHPMailer.php';
 
 
     //Enviando o e-mail Classe phpmail
@@ -159,7 +159,7 @@
 
 
 
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre<span class="caret"></span></a>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre <span class="caret"></span></a>
                             <ul class="dropdown-menu" id="terceiro-menu">
                                 <li><a href="../../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
                                 <li><a href="../../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>

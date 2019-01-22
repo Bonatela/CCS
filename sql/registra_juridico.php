@@ -28,7 +28,7 @@
                 if(isset($dados_usuario['usuario'])){
 
 
-                    echo "<script>location.href='../../parceiro/eror/duplicado_cnpj.html';</script>";
+                    echo "<script>location.href='../parceiro/eror/duplicado_cnpj.html';</script>";
 
                 }else{
 
@@ -37,7 +37,7 @@
                 }
 
             }else{
-                echo "<script>location.href='../../parceiro/eror/eror.html';</script>";
+                echo "<script>location.href='../parceiro/eror/eror.html';</script>";
             }
 
 
@@ -50,9 +50,9 @@
 
         //executar a query
         if(mysqli_query($link, $sql)){
-            echo "<script>location.href='../../parceiro/sucesso/sucesso.html';</script>";
+            echo "<script>location.href='../parceiro/sucesso/sucesso.html';</script>";
         } else {
-            echo "<script>location.href='../../parceiro/eror/eror.html';</script>";
+            echo "<script>location.href='../parceiro/eror/eror.html';</script>";
         }
 
 ?>

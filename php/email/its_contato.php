@@ -1,15 +1,63 @@
 <?php
 
-    session_start();
 
-        if(!isset($_SESSION['usuario'])){
-            echo "<script>location.href='../login/login.html';</script>";
+        // Recuperadno os Dados Enviados pelo Form
+        $GetPost = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
+        $Error = true;
+
+
+        //Variaveis Locais
+        $Email = $GetPost['email'];
+        $Telefone = $GetPost['telefone'];
+        $Nome = $GetPost['nome'];
+        $Endereco = $GetPost['end'];
+        $Cidade = $GetPost['cidade'];
+        $Uf = $GetPost['uf'];
+        $Cep = $GetPost['cep'];
+
+
+
+
+
+        //Incluir PHP MAILER
+        include_once '../mailer/src/SMTP.php';
+        include_once '../mailer/src/PHPMailer.php';
+
+
+        //Enviando o e-mail Classe phpmail
+
+        $Mailer = new \PHPMailer\PHPMailer\PHPMailer();
+
+        $Mailer->CharSet = "utf8";
+        $Mailer->IsSMTP();
+
+        $Mailer->Host = "certificadorasul.com.br";
+
+        $Mailer->SMTPAuth = true;
+        $Mailer->Username = "site@certificadorasul.com.br";
+        $Mailer->Password = "134679";
+        $Mailer->SMTPSecure = "tls";
+        $Mailer->Port = 587;
+
+        $Mailer->FromName = "($Nome)";
+        $Mailer->From = "site@certificadorasul.com.br";
+        $Mailer->AddAddress("sac@certificadorasul.com.br","site@certificadorasul.com.br");
+
+        $Mailer->IsHTML(true);
+
+        $Mailer->Subject = "E-emedico Compra Site";
+        $Mailer->Body = "Compra E-emedico  <br> Nome: $Nome <br> E-Mail: $Email  <br> Telefone: $Telefone <br> Endereco: $Endereco <br> Cidade: $Cidade <br> CEP: $Cep  <br> UF: $Uf";
+
+
+        //Verificar
+        if($Mailer->Send()){
+            $Error = false;
         }
+
 
 ?>
 
-
-<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -17,7 +65,7 @@
     <meta name="author" content="Guilherme Bonato">
 
 
-    <title>Parceiro CCS</title>
+    <title>Certificadora Sul</title>
 
 
 
@@ -43,14 +91,14 @@
     <!-- bootstrap -->
 
 
-
-
     <!--header icon CSS -->
     <link rel="icon" href="../../logos/favicon.png">
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/associado.css">
+    <!--CSS -->
+    <link rel="stylesheet" href="../return/css/css.css">
+
+
 
 
 
@@ -59,9 +107,6 @@
 
 </head>
 <body>
-
-
-
 
 
 <!--menu-->
@@ -75,7 +120,7 @@
 
 
 
-            <a class="navbar-brand" href="../parceiro.html" > <img src="../../logos/logotipo.png" id="logotipo-topo"> </a>
+            <a class="navbar-brand" href="../../index.html" > <img src="../../logos/logotipo.png" id="logotipo-topo" alt="logo CCS"> </a>
 
         </div>
 
@@ -102,6 +147,7 @@
                         <li><a href="../../produtos/conectividade/conectividade.html"><span class="fa fa-handshake-o"></span>&nbsp; Conectividade</a></li>
 
 
+
                     </ul>
                 </li>
 
@@ -120,29 +166,30 @@
                     <ul class="dropdown-menu" id="terceiro-menu">
                         <li><a href="../../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
                         <li><a href="../../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
-                        <li><a href="../its/its.html"><span class="fa fa-map-signs"></span> ITS</a></li>
+                        <li><a href="../../parceiro/its/its.html"><span class="fa fa-map-signs"></span> ITS</a></li>
                     </ul>
                 </li>
+
+                <li><a class="scroll" href="../../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
 
 
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 &nbsp;
-                <li><a href="#"><span class="fa fa-user-o"></span> <?= $_SESSION['usuario'] ?></a></li>
-                <li><a href="editar/editar_fisico.php"><span class="fa fa-wrench"></span> Editar</a></li>
-                <li><a href="../../sql/sair.php"><span class="fa fa-mail-reply-all"></span> Sair</a></li>
+                <li><a href="../../parceiro/cadastro/cadastro.html"><span class="fa fa-user-o"></span> Cadastrar</a></li>
+                <li><a href="../../parceiro/login/login.html"><span class="fa fa-users"></span> Logar</a></li>
+            </ul>
 
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.facebook.com/CertificadoraSul/"><span style="color:#fff;" class="fa fa-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/certificadorasul/?hl=pt-br"><span style="color:#fff;" class="fa fa-instagram"></span></a></li>
+                <li><a href="https://twitter.com/CompanhiaSul"><span style="color:#fff;" class="fa fa-twitter"></span></a></li>
             </ul>
 
 
-
-
         </nav>
-
-
     </div>
-
 
 </nav>
 
@@ -151,50 +198,25 @@
 
 
 
-<div class="space-50"></div>
-<div class="space-50"></div>
-<!-- Container (Escolha Certificado Section) -->
-<div class="container-fluid" id="fundo-certificado-escolha">
-    <div id="services" class="container-fluid text-center">
-        <h2>Conteudo apos logar </h2>
-        <h4>Porque escolher um </h4>
-        <br>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span style="color:#0291a7" class="glyphicon glyphicon-align-left fa-3x"></span>
-                <h4>Controle</h4>
-                <p>O e-mail certificado é um serviço que transforma um simples
-                    e-mail em uma mensagem eletrônica com validade jurídica provando o seu envio, recebimento, integridade autoria e a sua leitura, quando ocorrer, por parte do destinatário.</p>
-            </div>
-            <div class="col-sm-4">
-                <span style="color:#0291a7" class="fa fa-heart fa-3x"></span>
-                <h4>A <strong>CCS</strong> juntamente da VALID</h4>
-                <p>Presta total suporte aos seus clientes  </p>
-            </div>
-            <div class="col-sm-4">
-                <span  style="color:#0291a7" class="fa fa-expeditedssl fa-3x"></span>
-                <h4>Segurança</h4>
-                <p>Quando você possui um Certificado digital você
-                    Passa a transparecer maior segurança para seus clientes
-                    Sendo identificado tanto como pessoa física quanto como jurídica
-                </p>
-            </div>
-        </div>
-
-        <br><br>
 
 
+
+
+<div class="space-80"></div>
+
+<div class="container" align="center">
+
+    <div class="space-80"></div>
+    <h2>Mensagem enviada com sucesso!</h2>
+
+
+    <div class="btn-group">
+        <button type="button" class="button"><span style="color:#fff"><a href="../../produtos/emedico/emedico.html" style="color: whitesmoke">Voltar</a> </span></button>
     </div>
+
 </div>
 
-
-
-
-
-
-
-
-
+<div class="space-80"></div>
 
 
 
@@ -292,12 +314,8 @@
 <!-- Links Footer -->
 
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-    (function(){ var widget_id = 'EWPoJVPCeA';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-</script>
-<!-- {/literal} END JIVOSITE CODE -->
 
 
 </body>
 </html>
+

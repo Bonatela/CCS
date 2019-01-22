@@ -21,7 +21,9 @@
 
     $resultado_id = mysqli_query($link,$sql);
 
+
     if($resultado_id){
+
         $dados_usuario = mysqli_fetch_array($resultado_id);
 
 
@@ -29,17 +31,19 @@
 
             $_SESSION['usuario'] = $dados_usuario['usuario'];
 
-            echo "<script>location.href='../../parceiro/associado/index.php';</script>";
+
+
+            echo "<script>location.href='../parceiro/associado/index.php';</script>";
         }
 
             else {
-                echo "<script>location.href='../../parceiro/eror/inexistente.html';</script>";
+                echo "<script>location.href='../parceiro/eror/inexistente.html';</script>";
             }
 
         }
 
         else{
-            echo "<script>location.href='../../parceiro/eror/eror.html';</script>";
+            echo "<script>location.href='../parceiro/eror/eror.html';</script>";
         }
 
 
