@@ -58,13 +58,13 @@ echo $_SESSION['usuario'];
 
 
     <!--JS-->
-    <script src="mask_editar_fisico.js"></script>
+    <script src="js/mask_editar_fisico.js"></script>
 
     <!--header icon CSS -->
     <link rel="icon" href="../../../logos/favicon.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/associado.css">
+    <link rel="stylesheet" href="../assets/css/associado.css">
 
 
 
@@ -96,50 +96,11 @@ echo $_SESSION['usuario'];
         <nav id="links-menu" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-address-card-o"></span> Certificados <span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="segundo-menu">
 
-
-                        <li><a href="../../../produtos/ecpf/ecpf.html"><span class="fa fa-drivers-license"></span>&nbsp; e-CPF</a></li>
-                        <li><a href="../../../produtos/epf/epf.html"><span class="fa fa-id-badge"></span>&nbsp;&nbsp;  e-PF</a></li>
-                        <li><a href="../../../produtos/ecnpj/ecnpj.html"><span class="fa fa-briefcase"></span>&nbsp; e-CNPJ</a></li>
-                        <li><a href="../../../produtos/nfe/nfe.html"><span class="fa fa-barcode"></span>&nbsp; NF-e</a></li>
-                        <li><a href="../../../produtos/cte/cte.html"><span class="fa fa-truck"></span>&nbsp; CT-e</a></li>
-
-
-
-                        <li><a href="../../../produtos/bancario/bancario.html"><span class="fa fa-bank"></span>&nbsp; CIP</a></li>
-                        <li><a href="../../../produtos/oab/oab.html"><span class="fa fa-legal"></span> OAB</a></li>
-                        <li><a href="../../../produtos/emedico/emedico.html"><span class="fa fa-stethoscope"></span>&nbsp; e-Medico</a></li>
-                        <li><a href="../../../produtos/ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
-                        <li><a href="../../../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
-                        <li><a href="../../../produtos/conectividade/conectividade.html"><span class="fa fa-handshake-o"></span>&nbsp; Conectividade</a></li>
-
-
-                    </ul>
-                </li>
-
-
-
-
-                <li><a href="../../../produtos/bancario/bancario.html"><span class="fa fa-bank"></span> CIP</a></li>
-                <li><a href="../../../produtos/ssl/ssl.html"><span class="fa fa-shield"></span> SSL</a></li>
-                <li><a href="../../../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span> Mobile</a></li>
-                <li><a class="scroll" href="../../../map/mail.html"><span class="fa fa-map-marker"></span> Pontos</a></li>
-                <li><a href="../../../download/download.html"> <span class="fa fa-download"></span> Download</a></li>
-
-
-
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="fa fa-wechat"></span> Sobre <span class="caret"></span></a>
-                    <ul class="dropdown-menu" id="terceiro-menu">
-                        <li><a href="../../../faq/faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
-                        <li><a href="../../../map/mail.html"><span class="fa fa-envelope"></span> Email</a></li>
-                        <li><a href="../../its/its.html"><span class="fa fa-map-signs"></span> ITS</a></li>
-                    </ul>
-                </li>
 
 
             </ul>
+
 
             <ul class="nav navbar-nav navbar-right">
                 &nbsp;

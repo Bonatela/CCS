@@ -142,7 +142,7 @@
                                 <li><a href="../../produtos/ssl/ssl.html"><span class="fa fa-shield"></span>&nbsp; SSL</a></li>
                                 <li><a href="../../produtos/mobile/mobile.html"><span class="fa fa-tablet"></span>&nbsp; Mobile</a></li>
                                 <li><a href="../../produtos/conectividade/conectividade.html"><span class="fa fa-handshake-o"></span>&nbsp; Conectividade</a></li>
-
+                                <li><a href="../../produtos/promocional/promo.html"><span class="fa fa-cart-arrow-down"></span>&nbsp; Promocional</a></li>
 
 
                             </ul>
@@ -168,7 +168,7 @@
                         </li>
 
                         <li><a class="scroll" href="../../parceiro/parceiro.html"><span class="fa fa-slideshare"></span> Parceiro</a></li>
-                    
+                        <li><a href="../../renovacao/renovacao.html"><span class="fa fa-refresh"></span> Renovação</a></li>
 
                     </ul>
 
