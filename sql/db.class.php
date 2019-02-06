@@ -6,13 +6,13 @@
         private $host = 'localhost';
 
         //usuario
-        private $usuario = 'root';
+        private $usuario = 'super';
 
         //senha
-        private $senha = '';
+        private $senha = '12345';
 
         //banco de dados
-        private $database = 'tww';
+        private $database = 'compa382_tww';
 
         public function conecta_mysql(){
 
