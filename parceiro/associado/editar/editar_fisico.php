@@ -96,7 +96,7 @@ echo $_SESSION['usuario'];
         <nav id="links-menu" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
 
-                <li><a href="../index.php"><span class="fa fa-user-o"></span> Voltar</a></li>
+                <li><a href="../index.php"><span class="fa fa-arrow-circle-o-left"></span> Voltar</a></li>
 
 
             </ul>

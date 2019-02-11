@@ -84,7 +84,7 @@
 
 
 
-                <li><a href="#"><span class="fa fa-user-o"></span> KIT </a></li>
+                <li><a href="kitbiometrico/kit.php"><span class="fa fa-dashcube"></span> KIT </a></li>
 
             </ul>
 
