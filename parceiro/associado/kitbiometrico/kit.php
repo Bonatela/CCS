@@ -18,7 +18,7 @@ if(!isset($_SESSION['usuario'])){
     <meta name="author" content="Guilherme Bonato">
 
 
-    <title>Parceiro CCS</title>
+    <title>Kit Biometrico</title>
 
 
 
@@ -82,7 +82,7 @@ if(!isset($_SESSION['usuario'])){
         <nav id="links-menu" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="../index.php"><span class="fa fa-arrow-circle-o-left"></span> Voltar</a></li>
-                <li><a href="kit.php"><span class="fa fa-dashcube"></span> KIT </a></li>
+                <li><a href="kit.php"><span class="fa fa-dashcube"></span> Kit Biometrico </a></li>
 
 
 
@@ -92,7 +92,7 @@ if(!isset($_SESSION['usuario'])){
             <ul class="nav navbar-nav navbar-right">
                 &nbsp;
                 <li><a href="#"><span class="fa fa-user-o"></span> <?= $_SESSION['usuario'] ?></a></li>
-                <li><a href="../editar/editar_fisico.php"><span class="fa fa-wrench"></span> Editar</a></li>
+                <li><a href="../editar/editar_fisico.php"><span class="fa fa-pencil"></span> Editar</a></li>
                 <li><a href="../../../sql/sair.php"><span class="fa fa-mail-reply-all"></span> Sair</a></li>
 
             </ul>
@@ -109,48 +109,60 @@ if(!isset($_SESSION['usuario'])){
 </nav>
 
 
-<div class="space-60"></div>
 
 
-        <div class="row">
+
+<div class="space-80"></div>
+
+            <div class="container" align="center" id="img-boneco">
+                <img src="img/fundo.png" height="280px">
 
 
-            <div class="container" align="center">
-                <div class="space-20"></div>
+            </div>
 
+            <div class="container-fluid" align="center" id="kit">
+
+                <br>
                 <div class="col-md-6"><img src="img/webcam.png" height="120px">
-                <p><br>Logitech C920 HD Pro Webcam</p>
+                <p style="font-size: 16px; color: black"><br>Logitech C920 HD Pro Webcam</p>
                 </div>
 
-                <div class="col-lg-6"><img src="img/biometrico.jpg" height="120px">
-                <p><br>Leitor Biométrico Futronic Fs80-dt</p>
+                <br>
+                <div class="col-lg-6"><img src="img/biometrico.png" height="120px">
+                <p style="font-size: 16px; color: black"><br>Leitor Biométrico Futronic Fs80-dt</p>
                 </div>
-
 
                 <div class="space-20"></div>
             </div>
 
 
-        </div>
+
 
 
     <div class="space-30"></div>
 
 
+
         <div class="container">
 
+
+
             <div class="col-sm-4">
-                <span style="color: black" class="fa fa-cart-plus fa"></span>
-                <p>loremipsum dolor loremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolor </p>
+                <div class="space-20"></div>
+                <span style="color: black" class="fa fa-eye fa-3x"></span>
+                <p><br>Se quiser causar uma boa impressão em uma importante ligação no Skype, fazer gravações refinadas ou mostrar suas habilidades e paixões no YouTube, a C920 entregará tudo, com vídeo Full HD notavelmente nítido e detalhado (1080p a 30 qps) e som estéreo claro. </p>
             </div>
 
             <div class="col-sm-4">
-                <span style="color: black" class="glyphicon-fast-forward"></span>
-                <p>loremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolor</p>
+                <div class="space-20"></div>
+                <span style="color: black" class="	fa fa-hand-paper-o fa-3x"></span>
+                <p><br>O DigiScan FS 80H utiliza um avançado sensor óptico CCD (de câmeras digitais) que permite a captura da impressão digital em alta resolução e qualidade. Perfeito para utilização em sistemas de segurança, controle de acesso, catracas, acesso à rede, verificação da identidade, etc. </p>
             </div>
 
 
-            <div class="col-sm-4">
+
+            <div class="col" align="center">
+
                 <div class="well">
                     <h2 style="color: #0b2e13">Formas de Pagamento</h2>
 
@@ -160,8 +172,11 @@ if(!isset($_SESSION['usuario'])){
                         Você poderá pagar no boleto ou em Até 12 X sem juros através do PayPal
                     </p>
 
+                    <div class="container" align="center">
                     <span style="color:#014f5b"  class="fa fa-align-justify fa-2x"> </span> <span style="color:#014f5b"  class="fa fa-cc-paypal fa-2x"></span>
                     <span style="color:#014f5b"  class="fa fa-cc-visa fa-2x"></span> <span style="color:#014f5b"  class="fa fa-cc-mastercard fa-2x"></span>
+                    </div>
+
                 </div>
 
             </div>
@@ -172,17 +187,14 @@ if(!isset($_SESSION['usuario'])){
 
 
 
-        <div class="row">
 
             <div class="container">
-
-
-                <button type="button" class="btn btn-primary btn-md">Medium</button>
+                <button type="button" class="btn btn-primary btn-md">Comprar</button>
             </div>
 
 
 
-        </div>
+
 
 
 

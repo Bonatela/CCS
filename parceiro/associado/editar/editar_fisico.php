@@ -105,7 +105,7 @@ echo $_SESSION['usuario'];
             <ul class="nav navbar-nav navbar-right">
                 &nbsp;
                 <li><a href="#"><span class="fa fa-user-o"></span> <?= $_SESSION['usuario'] ?></a></li>
-                <li><a href="#"><span class="fa fa-wrench"></span> Editar</a></li>
+                <li><a href="#"><span class="fa fa-pencil"></span> Editar</a></li>
                 <li><a href="../../../sql/sair.php"><span class="fa fa-mail-reply-all"></span> Sair</a></li>
 
             </ul>

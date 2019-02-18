@@ -82,9 +82,9 @@
         <nav id="links-menu" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
 
-
-
                 <li><a href="kitbiometrico/kit.php"><span class="fa fa-dashcube"></span> Kit Biometrico </a></li>
+
+
 
             </ul>
 
@@ -92,7 +92,7 @@
             <ul class="nav navbar-nav navbar-right">
                 &nbsp;
                 <li><a href="#"><span class="fa fa-user-o"></span> <?= $_SESSION['usuario'] ?></a></li>
-                <li><a href="editar/editar_fisico.php"><span class="fa fa-wrench"></span> Editar</a></li>
+                <li><a href="editar/editar_fisico.php"><span class="fa fa-pencil"></span> Editar</a></li>
                 <li><a href="../../sql/sair.php"><span class="fa fa-mail-reply-all"></span> Sair</a></li>
 
             </ul>
