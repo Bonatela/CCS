@@ -134,35 +134,41 @@ if(!isset($_SESSION['usuario'])){
         </div>
 
 
-
-<div class="container">
-    <div class="col-sm-4">
-        <a href="its/its.html"><img src="../logos/iti.png" class="img-responsive" style="width:100%" alt="Image"> </a>
-    </div>
-    <div class="col-sm-4">
-        <a href="https://valid.com/pt-br/"><img src="../logos/valid.png" class="img-responsive" style="width:100%" alt="Image"></a>
-    </div>
+    <div class="space-30"></div>
 
 
-    <div class="col-sm-4">
-        <div class="well">
-            <h2 style="color: #0b2e13">Formas de Pagamento</h2>
+        <div class="container">
 
-            <p>
-                Na aquisição de um kit biométrico
-                Formado de Web Cam e leitor Biométrico,
-                Você poderá pagar no boleto ou em Até 12 X sem juros através do PayPal
-            </p>
+            <div class="col-sm-4">
+                <span style="color: black" class="fa fa-cart-plus fa"></span>
+                <p>loremipsum dolor loremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolor </p>
+            </div>
 
-            <span style="color:#014f5b"  class="fa fa-align-justify fa-2x"> </span> <span style="color:#014f5b"  class="fa fa-cc-paypal fa-2x"></span>
-            <span style="color:#014f5b"  class="fa fa-cc-visa fa-2x"></span> <span style="color:#014f5b"  class="fa fa-cc-mastercard fa-2x"></span>
+            <div class="col-sm-4">
+                <span style="color: black" class="glyphicon-fast-forward"></span>
+                <p>loremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolorloremipsum dolor</p>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div class="well">
+                    <h2 style="color: #0b2e13">Formas de Pagamento</h2>
+
+                    <p>
+                        Na aquisição de um kit biométrico
+                        Formado de Web Cam e leitor Biométrico,
+                        Você poderá pagar no boleto ou em Até 12 X sem juros através do PayPal
+                    </p>
+
+                    <span style="color:#014f5b"  class="fa fa-align-justify fa-2x"> </span> <span style="color:#014f5b"  class="fa fa-cc-paypal fa-2x"></span>
+                    <span style="color:#014f5b"  class="fa fa-cc-visa fa-2x"></span> <span style="color:#014f5b"  class="fa fa-cc-mastercard fa-2x"></span>
+                </div>
+
+            </div>
+
+
+
         </div>
-
-    </div>
-
-
-
-</div>
 
 
 
