@@ -97,7 +97,7 @@ echo $_SESSION['usuario'];
             <ul class="nav navbar-nav">
 
                 <li><a href="../index.php"><span class="fa fa-arrow-circle-o-left"></span> Voltar</a></li>
-
+                <li><a href="../kitbiometrico/kit.php"><span class="fa fa-dashcube"></span> Kit Biometrico </a></li>
 
             </ul>
 

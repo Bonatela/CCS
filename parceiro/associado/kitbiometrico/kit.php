@@ -128,8 +128,6 @@ if(!isset($_SESSION['usuario'])){
                 <p style="font-size: 16px; color: white"><br>Logitech C920 HD Pro Webcam</p>
                 </div>
 
-                <br>
-
                 <div class="col-lg-6"><img src="img/biometrico.png" height="120px">
                 <p style="font-size: 16px; color: white"><br>Leitor Biométrico Futronic Fs80-dt</p>
                 </div>
@@ -185,7 +183,7 @@ if(!isset($_SESSION['usuario'])){
 
             <div class="container">
                 <div class="space-30"></div>
-                <button type="button" class="btn btn-primary btn-md">Comprar</button>
+                <button type="button" class="btn btn-primary btn-md" id="btn-final">Comprar</button>
             </div>
 
 
