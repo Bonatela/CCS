@@ -103,21 +103,29 @@ span {
 }
 
 
-
-
-
-
-
-#img-boneco {
+body {
 
 }
+
 
 
 #kit {
 
-    background-image: linear-gradient(to right, whitesmoke,darkseagreen,whitesmoke,darkseagreen,white,darkseagreen,whitesmoke);
+    background-image: linear-gradient(to bottom right, #014F5B, darkseagreen);
+
 
 }
+
+
+
+
+#fun {
+
+    background-color: lightgray;
+}
+
+
+
 
 
 

@@ -114,25 +114,28 @@ if(!isset($_SESSION['usuario'])){
 
 <div class="space-80"></div>
 
+
             <div class="container" align="center" id="img-boneco">
                 <img src="img/fundo.png" height="280px">
-
-
             </div>
+
 
             <div class="container-fluid" align="center" id="kit">
 
                 <br>
+
                 <div class="col-md-6"><img src="img/webcam.png" height="120px">
-                <p style="font-size: 16px; color: black"><br>Logitech C920 HD Pro Webcam</p>
+                <p style="font-size: 16px; color: white"><br>Logitech C920 HD Pro Webcam</p>
                 </div>
 
                 <br>
+
                 <div class="col-lg-6"><img src="img/biometrico.png" height="120px">
-                <p style="font-size: 16px; color: black"><br>Leitor Biométrico Futronic Fs80-dt</p>
+                <p style="font-size: 16px; color: white"><br>Leitor Biométrico Futronic Fs80-dt</p>
                 </div>
 
                 <div class="space-20"></div>
+
             </div>
 
 
@@ -142,45 +145,37 @@ if(!isset($_SESSION['usuario'])){
     <div class="space-30"></div>
 
 
-
-        <div class="container">
-
+        <div class="container" id="fun">
 
 
-            <div class="col-sm-4">
-                <div class="space-20"></div>
-                <span style="color: black" class="fa fa-eye fa-3x"></span>
-                <p><br>Se quiser causar uma boa impressão em uma importante ligação no Skype, fazer gravações refinadas ou mostrar suas habilidades e paixões no YouTube, a C920 entregará tudo, com vídeo Full HD notavelmente nítido e detalhado (1080p a 30 qps) e som estéreo claro. </p>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="space-20"></div>
-                <span style="color: black" class="	fa fa-hand-paper-o fa-3x"></span>
-                <p><br>O DigiScan FS 80H utiliza um avançado sensor óptico CCD (de câmeras digitais) que permite a captura da impressão digital em alta resolução e qualidade. Perfeito para utilização em sistemas de segurança, controle de acesso, catracas, acesso à rede, verificação da identidade, etc. </p>
-            </div>
-
-
-
-            <div class="col" align="center">
-
-                <div class="well">
-                    <h2 style="color: #0b2e13">Formas de Pagamento</h2>
-
-                    <p>
-                        Na aquisição de um kit biométrico
-                        Formado de Web Cam e leitor Biométrico,
-                        Você poderá pagar no boleto ou em Até 12 X sem juros através do PayPal
-                    </p>
-
-                    <div class="container" align="center">
-                    <span style="color:#014f5b"  class="fa fa-align-justify fa-2x"> </span> <span style="color:#014f5b"  class="fa fa-cc-paypal fa-2x"></span>
-                    <span style="color:#014f5b"  class="fa fa-cc-visa fa-2x"></span> <span style="color:#014f5b"  class="fa fa-cc-mastercard fa-2x"></span>
-                    </div>
-
+                <div class="col-sm-4">
+                    <div class="space-20"></div>
+                    <span style="color: black" class="fa fa-eye fa-3x"></span>
+                    <p><br>Se quiser causar uma boa impressão em uma importante ligação no Skype, fazer gravações refinadas ou mostrar suas habilidades e paixões no YouTube, a C920 entregará tudo, com vídeo Full HD notavelmente nítido e detalhado (1080p a 30 qps) e som estéreo claro. </p>
                 </div>
 
-            </div>
 
+                <div class="col-sm-4">
+                    <div class="space-20"></div>
+                    <span style="color: black" class="	fa fa-hand-paper-o fa-3x"></span>
+                    <p><br>O DigiScan FS 80H utiliza um avançado sensor óptico CCD (de câmeras digitais) que permite a captura da impressão digital em alta resolução e qualidade. Perfeito para utilização em sistemas de segurança, controle de acesso, catracas, acesso à rede, verificação da identidade, etc. </p>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <br>
+                        <h2 style="color: #0b2e13">Formas de Pagamento</h2>
+
+                        <p>
+                            Na aquisição de um kit biométrico
+                            Formado de Web Cam e leitor Biométrico,
+                            Você poderá pagar no boleto ou em Até 12 X sem juros através do PayPal
+                        </p>
+
+                        <span style="color:#337AB7"  class="fa fa-align-justify fa-2x"> </span> <span style="color:#337AB7"  class="fa fa-cc-paypal fa-2x"></span>
+                        <span style="color:#337AB7"  class="fa fa-cc-visa fa-2x"></span> <span style="color:#337AB7"  class="fa fa-cc-mastercard fa-2x"></span>
+
+                </div>
 
 
         </div>
@@ -189,6 +184,7 @@ if(!isset($_SESSION['usuario'])){
 
 
             <div class="container">
+                <div class="space-30"></div>
                 <button type="button" class="btn btn-primary btn-md">Comprar</button>
             </div>
 
