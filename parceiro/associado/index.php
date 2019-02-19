@@ -112,45 +112,94 @@
 
 
 
+
 <div class="space-80"></div>
 
 
 
+<div class="container-fluid" id="imgqw">
 
-    <div class="container" align="center">
-        <div class="row">
+        <div class="col-sm-2 sidenav">
 
-
-
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <p>Lorem ipsum dolor..</p>
-                <p>Ut enim ad..</p>
+            <div class="well">
+                <p> <img src="../../logos/valid.png" height="60px"> </p>
             </div>
 
-
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <p>Lorem ipsum dolor..</p>
-                <p>Ut enim ad..</p>
+            <div class="well">
+                <p><img src="../../logos/civil.png" height="70px"></p>
             </div>
-
-
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <p>Lorem ipsum dolor..</p>
-                <p>Ut enim ad..</p>
-            </div>
-
-
 
         </div>
+
+
+
+
+    <div class="space-80"></div>
+
+
+
+    <div class="container" id="fundinho">
+
+                <div class="col-sm-5">
+                    <h1 style="color: whitesmoke;"><strong>Fenacon</strong></h1>
+                    <p style="color: whitesmoke;">A ampliação da digitalização de processos, com segurança e validade jurídica garantidas pelo uso do certificado digital no padrão da Infraestrutura</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <h1 style="color: whitesmoke;"><strong>Casa Civil</strong></h1>
+                    <p style="color: whitesmoke;">Visando aumentar a capacidade e a disponibilidade da Entidade de Auditoria do Tempo – EAT da Infraestrutura de Chaves Públicas Brasileira – ICP-Brasil, o Instituto Nacional de Tecnologia da Informação – ITI está adquirindo mais um oscilador de alta precisão para a Infraestrutura.</p>
+                </div>
+
+
     </div>
 
 
 
 
-<hr>
+
+</div>
+
+
+
+
+<div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="space-80"></div>
+                    <h3>Registro de Programas de Computador – e-RPC</h3>
+                    <p>Os registros para programas de computador junto ao Instituto Nacional da Propriedade Industrial – INPI podem ser obtidos digitalmente por meio do Sistema On-line para Registro de Programas de Computador – e-RPC. Para fazer o pedido de registro, o usuário não precisa mais enviar o código-fonte do software para o INPI. Agora basta criptografá-lo na forma de resumo digital hash, garantindo assim o sigilo da informação. Esse resumo será transcrito no formulário eletrônico de depósito.</p>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="space-80"></div>
+                    <h3>Conectividade Social ICP</h3>
+                    <p>O Conectividade Social ICP é um canal eletrônico usado para a troca de informações entre a Caixa Econômica Federal e as empresas, sindicatos, instituições financeiras, órgãos públicos e qualquer ente que se relacione com o Fundo de Garantia por Tempo de Serviço - FGTS. O acesso ao sistema deve ser feito com a utilização de certificado digital ICP-Brasil, que agrega a segurança e dinamismo ao processo.</p>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="space-80"></div>
+                    <h3>CNH Digital</h3>
+                    <p>Até fevereiro de 2018 motoristas de todo país poderão apresentar a Carteira Nacional de Habilitação – CNH em formato eletrônico, a CNH-e. A emissão do documento digital foi aprovada no dia 25 de julho de 2017, pelo Conselho Nacional de Trânsito – Contran. O formato digital tem a mesma validade do documento impresso, visto que é assinado com certificado digital no padrão da Infraestrutura de Chaves Públicas Brasileira – ICP-Brasil.</p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
 <!-- Links Footer -->
 <div class="jumbotron" id="baixo">
     <div class="container" align="left">

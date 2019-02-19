@@ -108,9 +108,18 @@ span {
 
 
 
+#imgqw {
+
+    background-image: url("../img/bussines.jpg");
+
+}
 
 
+#fundinho {
 
+    float: right;
+    background-color: rgb(1,79,91,0.7);
+}
 
 
 

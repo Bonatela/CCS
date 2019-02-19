@@ -124,12 +124,20 @@ if(!isset($_SESSION['usuario'])){
 
                 <br>
 
-                <div class="col-md-6"><img src="img/webcam.png" height="120px">
+                <div class="col-sm-3"><img src="img/webcam.png" height="120px">
                 <p style="font-size: 16px; color: white"><br>Logitech C920 HD Pro Webcam</p>
                 </div>
 
-                <div class="col-lg-6"><img src="img/biometrico.png" height="120px">
+                <div class="col-sm-3"><img src="img/270.png" height="120px">
+                    <p style="font-size: 16px; color: white"><br>Logitech C270 HD Webcam</p>
+                </div>
+
+                <div class="col-sm-3"><img src="img/biometrico.png" height="120px">
                 <p style="font-size: 16px; color: white"><br>Leitor Biométrico Futronic Fs80-dt</p>
+                </div>
+
+                <div class="col-sm-3"><img src="img/nitjen.png" height="120px">
+                    <p style="font-size: 16px; color: white"><br>Leitor Biométrico Nitgen HFDU04</p>
                 </div>
 
                 <div class="space-20"></div>
@@ -146,34 +154,34 @@ if(!isset($_SESSION['usuario'])){
         <div class="container" id="fun">
 
 
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="space-20"></div>
                     <span style="color: black" class="fa fa-eye fa-3x"></span>
                     <p><br>Se quiser causar uma boa impressão em uma importante ligação no Skype, fazer gravações refinadas ou mostrar suas habilidades e paixões no YouTube, a C920 entregará tudo, com vídeo Full HD notavelmente nítido e detalhado (1080p a 30 qps) e som estéreo claro. </p>
                 </div>
 
 
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="space-20"></div>
                     <span style="color: black" class="	fa fa-hand-paper-o fa-3x"></span>
                     <p><br>O DigiScan FS 80H utiliza um avançado sensor óptico CCD (de câmeras digitais) que permite a captura da impressão digital em alta resolução e qualidade. Perfeito para utilização em sistemas de segurança, controle de acesso, catracas, acesso à rede, verificação da identidade, etc. </p>
                 </div>
 
 
-                <div class="col-sm-4">
-                    <br>
-                        <h2 style="color: #0b2e13">Formas de Pagamento</h2>
+            <div class="col-sm-6">
+                <div class="space-20"></div>
+                <span style="color: black" class="fa fa-eye fa-3x"></span>
+                <p><br>Experimente uma videochamada nítida e suave (720p/30 qps) em formato widescreen com a webcam C270 HD. A correção automática da luz mostra cores vibrantes e naturais. </p>
+            </div>
 
-                        <p>
-                            Na aquisição de um kit biométrico
-                            Formado de Web Cam e leitor Biométrico,
-                            Você poderá pagar no boleto ou em Até 12 X sem juros através do PayPal
-                        </p>
 
-                        <span style="color:#337AB7"  class="fa fa-align-justify fa-2x"> </span> <span style="color:#337AB7"  class="fa fa-cc-paypal fa-2x"></span>
-                        <span style="color:#337AB7"  class="fa fa-cc-visa fa-2x"></span> <span style="color:#337AB7"  class="fa fa-cc-mastercard fa-2x"></span>
+            <div class="col-sm-6">
+                <div class="space-20"></div>
+                <span style="color: black" class="	fa fa-hand-paper-o fa-3x"></span>
+                <p><br>O DigiScan Nitgen HFDU04 utiliza um avançado sensor óptico que permite a captura da impressão digital em alta resolução e qualidade. Perfeito para utilização em sistemas de segurança, controle de acesso, catracas, acesso à rede, verificação da identidade, etc. </p>
+            </div>
 
-                </div>
+
 
 
         </div>
@@ -181,9 +189,30 @@ if(!isset($_SESSION['usuario'])){
 
 
 
+
+
+
             <div class="container">
                 <div class="space-30"></div>
-                <button type="button" class="btn btn-primary btn-md" id="btn-final">Comprar</button>
+
+
+                <div class="col-sm-4">
+                    <br>
+                    <h2 style="color: #0b2e13">Formas de Pagamento</h2>
+
+                    <p>
+                        Na aquisição de um kit biométrico
+                        Formado de Web Cam e leitor Biométrico,
+                        Você poderá pagar no boleto ou em Até 12 X sem juros através do PayPal
+                    </p>
+
+                    <span style="color:#337AB7"  class="fa fa-align-justify fa-2x"> </span> <span style="color:#337AB7"  class="fa fa-cc-paypal fa-2x"></span>
+                    <span style="color:#337AB7"  class="fa fa-cc-visa fa-2x"></span> <span style="color:#337AB7"  class="fa fa-cc-mastercard fa-2x"></span>
+
+                    &nbsp; &nbsp;<button type="button" class="btn btn-primary btn-md" id="btn-final">Comprar</button>
+                </div>
+
+
             </div>
 
 
